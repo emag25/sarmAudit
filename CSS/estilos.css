@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+}
+
+hr{
+    border-color: red;    
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #0f1a2c;    
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+/* --- MENU ---*/
+.header{
+    background-color: #0f1a2c;
+    color: white;
+}
+
+
+
+/* --- ENCABEZADO ---*/
+.encabezado{
+    background-color: #0f1a2c;
+    color: white;
+}
+
+
+
+/* --- CUERPO ---*/
+.cuerpo{
+    background-color: white;
+    color: #0f1a2c;
+}
+
+.cuerpo-faqs{
+    background-color: #68d2df;
+    color: #0f1a2c;
+}
+
+
+/* --- FOOTER ---*/
+.foot{
+    background-color: #0f1a2c;
+    color: white;
+}
+
+.foot i{
+    color: #68d2df;
+}
