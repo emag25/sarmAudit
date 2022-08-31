@@ -15,15 +15,27 @@ a{
     color: #0f1a2c;    
 }
 
-.header a{
+.menu a{
     text-decoration: none;
     color: white;
 }
 
 /* --- MENU ---*/
-.header{
+.menu{
     background-color: #0f1a2c;
     color: white;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+.menu-navbar{
+    display: inline;
+}
+.menu-collapse {
+    float: right;
+}
+.menu-collapse a{
+    margin: 20px;
 }
 
 
