@@ -42,9 +42,10 @@ p, a {
 .menu{
     background-color: #0f1a2c;
     color: white;
-    /*position: fixed;
+   /* position: fixed;
     z-index: 1;
-    overflow:hidden;*/
+    overflow:hidden;
+    width: 100%;*/
     padding: 20px;
 }
 
@@ -108,7 +109,7 @@ p, a {
     color: #0f1a2c;
 }
 
-.cuerpo-servicios, .cuerpo-faqs, .cuerpo-contacto {
+.cuerpo-servicios, .cuerpo-faqs, .cuerpo-contacto, .cuerpo-mv, .cuerpo-valores, .cuerpo-certificaciones, .cuerpo-equipo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,10 +124,11 @@ p, a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 40px;
     width: 100%;
+    margin-top: 50px;
 }
 
 .servicios {
@@ -139,14 +141,15 @@ p, a {
     margin: 20px 0 20px 0;
     width: 30%;
     background: #F1F1F1;
+    border-radius: 20px;
 }
 
-.servicios div { /* --- PARA LA IMAGEN --- */
-    background: #68d2df;
-    color: #68d2df;
-    width: 70%;
-    height: 150px;
-    margin-top: -80px;
+.servicios img {
+    width: 200px;
+    height: auto;
+    margin-top: -120px;
+    border-radius: 50%;
+    border: white solid 10px;
 }
 
 .servicios h2 {
@@ -178,6 +181,7 @@ p, a {
     padding: 20px;
     margin-top: 10px;
     cursor: pointer;
+    border-radius: 20px;
 }
 
 .question i, .question2 i{
@@ -235,6 +239,141 @@ p, a {
 
 
 
+/* --- CUERPO MV ---*/
+
+.contenedor-mv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+}
+
+.mv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 40%;
+    background: #F1F1F1;
+    border-radius: 20px;
+}
+
+.mv h2 {
+    margin-bottom: 20px;
+}
+
+
+/* --- CUERPO VALOR ---*/
+
+.contenedor-valores {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.valor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.valor i {
+    font-size: 50pt;
+}
+
+
+/* --- CUERPO CERTIFICACIONES ---*/
+
+.contenedor-certificaciones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    width: 100%;
+}
+
+.certificacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 40%;
+}
+
+.certificacion h2 {
+    margin-top: 20px;
+}
+
+/*.certificacion .medal {
+    font-size: 60pt;
+}*/
+
+.certificacion .pdf {
+    font-size: 30pt;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #606877;
+}
+
+
+/* --- CUERPO EQUIPO ---*/
+
+.contenedor-miembro {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.miembro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    background: #F1F1F1;
+    padding: 40px;
+    margin: 20px 0 20px 0;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.miembro img {
+    width: 200px;
+    height: auto;
+    margin-top: -130px;
+    border-radius: 50%;
+    border: white solid 10px;
+}
+
+.miembro h3 {
+    color: #606877;
+    margin-bottom: 20px;
+}
+
+.miembro h2 {
+    margin: 20px 0 5px 0;
+}
 
 
 
