@@ -13,7 +13,10 @@
     <link href='https://unpkg.com/boxicons@2.1.2/dist/boxicons.js' rel='stylesheet'>
 
     <style>
-
+        .encabezado img {
+            width: 20%;
+            height: auto;
+        }
     </style>
 
 </head>
@@ -35,7 +38,7 @@
                 <a class="header-item" href="../#servicios">SERVICIOS</a>
                 <a class="header-item" href="../#faqs">FAQs</a>
                 <a class="header-item" href="../#contacto">CONTACTO</a>
-                <a class="header-item" href="nosotros.html">NOSOTROS</a>
+                <a style="color: #68d2df;" class="header-item" href="nosotros.html">NOSOTROS</a>
                 <a class="header-item" href="blog/blog.html">BLOG</a>
                 <!--<ul>
                     <li><a class="header-item" href="../#inicio">INICIO</a></li>
@@ -52,7 +55,7 @@
     <hr>
     <!-- ENCABEZADO -->
     <div class="encabezado">
-        <img src="../assets/img/LOGO-SOLO.png" height="300px"/>
+        <img src="../assets/img/LOGO-SOLO.png" height="300px" />
         <h1>¿QUIÉNES SOMOS?</h1>
         <p>Aqui va el fondo en movimiento, y aqui pones labia cara en dskdfgfd cdsgdfbsdgsd fgrthsb gadvfdvsdvsb dfb
             sdfervfb fdghbdfhdfsbsfdb
@@ -65,21 +68,51 @@
 
         <!-- MISION Y VISION -->
         <div class="cuerpo-mv">
-            <div class="cuerpo-mv-content">
-                <h3>MISION</h3>
-                <p>Este servicio consiste en dskdfgfd cdsgdfbsdgsd fgrthsb gadvfdvsdvsb dfb
-                    sdfervfb fdghbdfhdfsbsfdb
-                </p>
-            </div>
-            <div class="cuerpo-mv-content">
-                <h3>VISION</h3>
-                <p>Este servicio consiste en dskdfgfd cdsgdfbsdgsd fgrthsb gadvfdvsdvsb dfb
-                    sdfervfb fdghbdfhdfsbsfdb
-                </p>
+            <div class="contenedor-mv">
+                <div class="mv">
+                    <h2>MISION</h2>
+                    <p>Este servicio consiste en dskdfgfd cdsgdfbsdgsd fgrthsb gadvfdvsdvsb dfb
+                        sdfervfb fdghbdfhdfsbsfdb
+                    </p>
+                </div>
+                <div class="mv">
+                    <h2>VISION</h2>
+                    <p>Este servicio consiste en dskdfgfd cdsgdfbsdgsd fgrthsb gadvfdvsdvsb dfb
+                        sdfervfb fdghbdfhdfsbsfdb
+                    </p>
+                </div>
             </div>
         </div>
-        
-        <hr>
+
+
+        <!-- VALORES -->
+        <div class="cuerpo-valores">
+            <h2>VALORES</h2>
+            <div class="contenedor-valores">
+                <div class="valor">
+                    <i class='bx bxs-planet'></i>
+                    <h3>Valor 1</h3>
+                </div>
+                <div class="valor">
+                    <i class='bx bxs-planet'></i>
+                    <h3>Valor 2</h3>
+                </div>
+                <div class="valor">
+                    <i class='bx bxs-planet'></i>
+                    <h3>Valor 3</h3>
+                </div>
+                <div class="valor">
+                    <i class='bx bxs-planet'></i>
+                    <h3>Valor 4</h3>
+                </div>
+                <div class="valor">
+                    <i class='bx bxs-planet'></i>
+                    <h3>Valor 5</h3>
+                </div>
+            </div>
+        </div>
+
+
         <!-- CERTIFICACIONES -->
         <div class="cuerpo-certificaciones">
             <h2>CERTIFICACIONES</h2>
@@ -88,13 +121,13 @@
             </p>
         </div>
 
-        <hr>
+
         <!-- NUESTRO EQUIPO -->
         <div class="cuerpo-equipo">
             <h2>NUESTRO EQUIPO</h2>
 
             <div class="cuerpo-miembro">
-                <img src="../IMG/FONDO-AZUL.png" height="50px"/>
+                <img src="../assets/img/FONDO-AZUL.png" height="50px" />
                 <h3>PERSONA 1</h3>
                 <p>titulo profesional</p>
                 <p>descripcion de la persona cdsgdfbsdgsd fgrthsb gadvfdvsdvsb dfb
@@ -103,13 +136,13 @@
             </div>
 
             <div class="cuerpo-miembro">
-                <img src="../IMG/FONDO-AZUL.png" height="50px"/>
+                <img src="../assets/img/FONDO-AZUL.png" height="50px" />
                 <h3>PERSONA 2</h3>
                 <p>titulo profesional</p>
                 <p>descripcion de la persona cdsgdfbsdgsd fgrthsb gadvfdvsdvsb dfb
                     sdfervfb fdghbdfhdfsbsfdb
                 </p>
-            </div>  
+            </div>
         </div>
 
     </div>
@@ -118,22 +151,50 @@
     <hr>
     <!-- FOOTER -->
     <footer class="foot">
-        <p>Este es el pie de pagina</p>
 
-        <div class="foot-contactos">
-            <i class='bx bxs-phone bx-tada-hover'></i>
-            <p>+593 (09) 99999999</p>
-        </div>
-        <div class="foot-contactos">
-            <i class='bx bxs-envelope bx-tada-hover'></i>
-            <p>info@sarm-audit.com</p>
-        </div>
-        <div class="foot-contactos">
-            <i class='bx bxl-linkedin-square bx-tada-hover'></i>
-            <a href="#">www.linkedin.com/sarm-audit</a>
+        <div class="foot-container">
+            <img src="../assets/img/FONDO-AZUL.png" width="190px">
+
+            <div class="foot-contacto">
+                <h4>CONTACTO</h4>
+
+                <div class="contenedor-contacto">
+                    <div class="contacto">
+                        <i class='bx bxs-phone bx-tada-hover'></i>
+                        <p>+593 (09) 99999999</p>
+                    </div>
+                    <div class="contacto">
+                        <i class='bx bxs-envelope bx-tada-hover'></i>
+                        <p>info@sarm-audit.com</p>
+                    </div>
+                    <div class="contacto">
+                        <i class='bx bxl-linkedin-square bx-tada-hover'></i>
+                        <a href="#">www.linkedin.com/sarm-audit</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot-horario">
+                <h4>HORARIOS DE ATENCIÓN</h4>
+                <p style="margin-top: 20px;">Lunes a Viernes: 9h a 17h</p>
+                <p>Sabado: 9h a 13h</p>
+                <p style="margin-bottom:0;">Feriados: No hay atención</p>
+            </div>
+
+            <div class="foot-secciones">
+                <h4>SECCIONES</h4>
+                <a style="margin-top: 20px;" class="header-item" href="../#inicio">Inicio</a>
+                <a class="header-item" href="../#servicios">Servicios</a>
+                <a class="header-item" href="../#faqs">FAQs</a>
+                <a class="header-item" href="../#contacto">Contacto</a>
+                <a class="header-item" href="nosotros.html">Nosotros</a>
+                <a class="header-item" href="blog/blog.html">Blog</a>
+            </div>
         </div>
 
-        <p>SARM-AUDIT © 2022 Todos los derechos reservados</p>
+        <div class="copy">
+            <p>SARM-AUDIT © 2022 Todos los derechos reservados</p>
+        </div>
     </footer>
 
 </body>

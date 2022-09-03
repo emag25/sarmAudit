@@ -13,6 +13,10 @@
     <link href='https://unpkg.com/boxicons@2.1.2/dist/boxicons.js' rel='stylesheet'>
 
     <style>
+        .encabezado img {
+            width: 20%;
+            height: auto;
+        }
 
     </style>
 
@@ -36,7 +40,7 @@
                 <a class="header-item" href="../../#faqs">FAQs</a>
                 <a class="header-item" href="../../#contacto">CONTACTO</a>
                 <a class="header-item" href="../nosotros.html">NOSOTROS</a>
-                <a class="header-item" href="blog.html">BLOG</a>
+                <a style="color: #68d2df;" class="header-item" href="blog.html">BLOG</a>
                 <!--<ul>
                     <li><a class="header-item" href="../../#inicio">INICIO</a></li>
                     <li><a class="header-item" href="../../#servicios">SERVICIOS</a></li>
@@ -111,22 +115,50 @@
     <hr>
     <!-- FOOTER -->
     <footer class="foot">
-        <p>Este es el pie de pagina</p>
 
-        <div class="foot-contactos">
-            <i class='bx bxs-phone bx-tada-hover'></i>
-            <p>+593 (09) 99999999</p>
-        </div>
-        <div class="foot-contactos">
-            <i class='bx bxs-envelope bx-tada-hover'></i>
-            <p>info@sarm-audit.com</p>
-        </div>
-        <div class="foot-contactos">
-            <i class='bx bxl-linkedin-square bx-tada-hover'></i>
-            <a href="#">www.linkedin.com/sarm-audit</a>
+        <div class="foot-container">
+            <img src="../../assets/img/FONDO-AZUL.png" width="190px">
+
+            <div class="foot-contacto">
+                <h4>CONTACTO</h4>
+
+                <div class="contenedor-contacto">
+                    <div class="contacto">
+                        <i class='bx bxs-phone bx-tada-hover'></i>
+                        <p>+593 (09) 99999999</p>
+                    </div>
+                    <div class="contacto">
+                        <i class='bx bxs-envelope bx-tada-hover'></i>
+                        <p>info@sarm-audit.com</p>
+                    </div>
+                    <div class="contacto">
+                        <i class='bx bxl-linkedin-square bx-tada-hover'></i>
+                        <a href="#">www.linkedin.com/sarm-audit</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot-horario">
+                <h4>HORARIOS DE ATENCIÓN</h4>
+                <p style="margin-top: 20px;">Lunes a Viernes: 9h a 17h</p>
+                <p>Sabado: 9h a 13h</p>
+                <p style="margin-bottom:0;">Feriados: No hay atención</p>
+            </div>
+
+            <div class="foot-secciones">
+                <h4>SECCIONES</h4>
+                <a style="margin-top: 20px;" class="header-item" href="../../#inicio">Inicio</a>
+                <a class="header-item" href="../../#servicios">Servicios</a>
+                <a class="header-item" href="../../#faqs">FAQs</a>
+                <a class="header-item" href="../../#contacto">Contacto</a>
+                <a class="header-item" href="../nosotros.html">Nosotros</a>
+                <a class="header-item" href="blog.html">Blog</a>
+            </div>
         </div>
 
-        <p>SARM-AUDIT © 2022 Todos los derechos reservados</p>
+        <div class="copy">
+            <p>SARM-AUDIT © 2022 Todos los derechos reservados</p>
+        </div>
     </footer>
 
 </body>

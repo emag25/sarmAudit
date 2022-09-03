@@ -6,8 +6,12 @@ hr{
     border-color: red;    
 }
 
-li{
+/*li{
     list-style: none;
+}*/
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a{
@@ -15,36 +19,81 @@ a{
     color: #0f1a2c;    
 }
 
-.menu a{
-    text-decoration: none;
-    color: white;
+h1 {
+    border-bottom: #68d2df solid;
+    font-size: 25pt;
+    margin-bottom: 80px;
 }
+
+h2 {
+    text-align: center;
+}
+
+p, a {
+    font-size: 14pt;
+    text-align: center;
+}
+
+
+
+
 
 /* --- MENU ---*/
 .menu{
     background-color: #0f1a2c;
     color: white;
-    position: fixed;
-    z-index: 100;
-    width: 100%;
+    /*position: fixed;
+    z-index: 1;
+    overflow:hidden;*/
+    padding: 20px;
 }
+
 .menu-navbar{
     display: inline;
 }
+
 .menu-collapse {
     float: right;
 }
+
 .menu-collapse a{
     margin: 20px;
 }
+
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+
 
 
 
 /* --- ENCABEZADO ---*/
 .encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px 80px 20px;
     background-color: #0f1a2c;
     color: white;
 }
+
+.encabezado p {
+    text-align: center;
+    width: 50%;
+    margin-top: 60px;
+    font-size: 20pt;
+}
+
+.encabezado h1 {
+    margin: 10px;
+}
+
+
+
+
 
 
 
@@ -55,17 +104,221 @@ a{
 }
 
 .cuerpo-faqs, .cuerpo-certificaciones{
-    background-color: #68d2df;
+    background-color: #E0FDFF;
     color: #0f1a2c;
 }
+
+.cuerpo-servicios, .cuerpo-faqs, .cuerpo-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 40px 80px 40px;
+}
+
+
+/* --- CUERPO SERVICIOS ---*/
+
+.contenedor-servicios {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 40px;
+    margin: 20px 0 20px 0;
+    width: 30%;
+    background: #F1F1F1;
+}
+
+.servicios div { /* --- PARA LA IMAGEN --- */
+    background: #68d2df;
+    color: #68d2df;
+    width: 70%;
+    height: 150px;
+    margin-top: -80px;
+}
+
+.servicios h2 {
+    margin: 20px 0 20px 0;
+}
+
+.servicios p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* --- CUERPO FAQs ---*/
+
+.contenedor-faqs {
+    width: 70%;
+}
+
+.faqs p {
+    text-align: justify;
+}
+
+.question {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #0f1a2c;
+    color: white;
+    padding: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.question i, .question2 i{
+    font-size: 30px;
+}
+
+.answer {
+    margin-bottom: 10px;
+    padding: 20px;
+    display: none;
+}
+
+.question2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: #0f1a2c solid 1px;    
+    padding: 20px;
+    cursor: pointer;
+}
+
+.answer2 {
+    border-top: #0f1a2c solid 1px;
+    padding: 20px;
+    display: none;
+}
+
+
+/* --- CUERPO CONTACTO ---*/
+
+.cuerpo-contacto .contenedor-contacto {
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.cuerpo-contacto .contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+}
+
+.cuerpo-contacto .contacto i {
+    font-size: 50px;
+}
+
+.cuerpo-contacto .contacto p {
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 
 /* --- FOOTER ---*/
 .foot{
     background-color: #0f1a2c;
     color: white;
+    padding: 20px;
 }
 
 .foot i{
     color: #68d2df;
+    font-size: 15pt;
+}
+
+.foot p, .foot a{
+    font-size: 13pt;
+    text-align: justify;
+    color: white;
+    display: block;
+}
+
+.foot h4 {
+    margin-bottom: 20px;
+    border-bottom: #68d2df solid 1px;
+    display: inline;
+}
+
+.copy p{
+    padding-top: 20px;
+    border-top: #F1F1F1 solid 1px;
+    text-align: center;
+}
+
+.foot-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 20px 0 40px 0;
+}
+
+.foot-contacto .contenedor-contacto {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.foot-contacto .contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.foot-horario p{
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+/* --- RESPONSIVE --- */
+
+@media screen and (max-width:800px) {
+    /*display:none para quitar un elemento*/
+
+}
+
+@media screen and (max-width:400px) {
+    /*display:none para quitar un elemento*/
+    
 }
