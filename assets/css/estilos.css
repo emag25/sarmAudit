@@ -376,6 +376,53 @@ p, a {
 }
 
 
+/* --- CUERPO EQUIPO ---*/
+
+.contenedor-blog {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 80px 20px 80px 20px;
+    gap: 40px;
+    
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #F1F1F1;
+    padding: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    width: 25%;    
+}
+
+.blog img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.blog i {
+   color: #606877;
+   display: inline;
+}
+
+.blog p {
+    font-size: 12pt;
+    display: inline;
+ }
+
+.blog h2 {
+    font-weight: 500;
+    margin: 20px 0px 20px 0px;
+}
+
+
+
 
 
 
