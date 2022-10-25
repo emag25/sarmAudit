@@ -2,9 +2,6 @@
     margin: 0;
 }
 
-hr{
-    border-color: red;    
-}
 
 /*li{
     list-style: none;
@@ -33,8 +30,6 @@ p, a {
     font-size: 14pt;
     text-align: center;
 }
-
-
 
 
 
@@ -158,8 +153,57 @@ p, a {
 
 .servicios p {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
+
+.more {
+    border: none;
+    background: none;
+    padding-right: 0;
+}
+
+.more span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 14px;
+    padding-right: 12px;
+    text-transform: uppercase;
+}
+
+.more svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.more:hover svg {
+    transform: translateX(0);
+}       
+
+
+.hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.more:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
 
 
 /* --- CUERPO FAQs ---*/
@@ -258,7 +302,7 @@ p, a {
     justify-content: center;
     box-sizing: border-box;
     padding: 40px;
-    width: 40%;
+    width: 35%;
     background: #F1F1F1;
     border-radius: 20px;
 }
@@ -277,6 +321,7 @@ p, a {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
+    gap: 10px;
     margin-top: 40px;
 }
 
@@ -300,10 +345,10 @@ p, a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    
     width: 100%;
+    gap: 20px;
 }
 
 .certificacion {
@@ -313,7 +358,6 @@ p, a {
     justify-content: center;
     box-sizing: border-box;
     padding: 20px;
-    width: 40%;
 }
 
 .certificacion h2 {
@@ -354,7 +398,7 @@ p, a {
     background: #F1F1F1;
     padding: 40px;
     margin: 20px 0 20px 0;
-    width: 40%;
+    width: 35%;
     border-radius: 20px;
 }
 
@@ -369,6 +413,7 @@ p, a {
 .miembro h3 {
     color: #606877;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .miembro h2 {
