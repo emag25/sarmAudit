@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emely Mishell Apráez González">
+    <meta name="description"
+        content="Contacta con una auditor de la firma SARM-AUDIT">
+    <meta name="keywords"
+        content="auditoria externa, control interno firma de auditores, contátanos, contacto, redes sociales">
+    <meta name="author" content="Emely Mishell Apráez González">
+    <title>Contáctanos - SARM-AUDIT S.A.S.</title>
+
+    <link href="assets/css/estilos.css" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        .encabezado img {
+            width: 20%;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- MENU -->
+    <nav class="menu">
+        <div class="menu-contenedor">
+            <div class="menu-navbar">
+                <a href="index.html"><img src="assets/img/FONDO-AZUL-LINEA.png" alt="sarm-audit" width="250px"></a>
+            </div>
+            <div class="menu-collapse">
+                <a class="header-item" href="index.html">INICIO</a>
+                <a class="header-item" href="nosotros.html">NOSOTROS</a>
+                <a class="header-item" href="servicios.html">SERVICIOS</a>
+                <a class="header-item" href="contacto.html">CONTACTO</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ENCABEZADO -->
+    <div class="encabezado">
+        <img src="../assets/img/LOGO-SOLO.png" height="300px" />
+        <h1>CONTÁCTANOS</h1>
+        <p>Este espacio es dedicado para ti. ¿Cómo podemos ayudarte?
+        </p>
+    </div>
+
+    <!-- BODY -->
+    <div class="cuerpo">
+
+        <!-- HORARIOS -->
+        <div class="cuerpo-horario">
+            <div class="contenedor-horario-letras">
+                <h1>HORARIOS DE ATENCIÓN</h1>
+                <p>Estamos a tu disposición! Puedes contactarnos en los siguientes horarios.</p>
+            </div>            
+            <div class="horario">
+                <div class="contenedor-dias">
+                    <p>Lunes a Viernes</p>
+                    <p>Sábados</p>
+                    <p>Domingos y Feriados</p>
+                </div>
+                <div class="contenedor-horas">                
+                    <p>09:00 a 17:00</p>                
+                    <p>9:00 a 13:00</p>                
+                    <p>No hay atención</p>
+                </div>
+            </div>                              
+        </div>        
+
+
+        <!-- REDES SOCIALES -->
+        <section class="cuerpo-contacto">           
+            
+            <div class="contenedor-contacto">                
+                <div class="contacto">
+                    <a href="#">
+                        <i class='bx bxs-envelope bx-tada-hover'></i>
+                        <p>info@sarm-audit.com</p>
+                    </a>                    
+                </div>                
+                <div class="contacto">
+                    <a href="#">
+                        <i class='bx bxl-linkedin-square bx-tada-hover'></i>
+                        <p>www.linkedin.com/sarm-audit</p>
+                    </a>                    
+                </div>
+                <div class="contacto">
+                    <a href="https://wa.me/593989357505?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" target="_blank">
+                        <i class='bx bxl-whatsapp bx-tada-hover' ></i>
+                        <p>+593 (09) 89357505</p>
+                    </a>                    
+                </div>
+            </div>
+
+            <div class="contenedor-contacto-letras">
+                <h1>REDES SOCIALES</h1>
+                <p>Ponte en contacto con nosotros a través de nuestras redes sociales.</p>
+            </div>
+
+        </section>
+
+
+        <!-- FORMULARIO -->
+        <div class="cuerpo-formulario">
+            
+            <div class="contenedor-formulario-letras">
+                <h1>DÉJANOS UN MENSAJE</h1>
+                <p>Llena los siguientes datos y envía tu mensaje. Nos pondremos en contacto contigo lo más pronto posible.</p>
+            </div>            
+            
+            <div class="contenedor-formulario">
+
+                <form action="">
+                    <div class="inputGroup">
+                        <label for="nombres">Nombres *</label>
+                        <input type="text" required id="nombres">                        
+                    </div>
+                    <div class="inputGroup">
+                        <label for="email">Email *</label>
+                        <input type="email" required id="email">                        
+                    </div>
+                    <div class="inputGroup">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" required id="telefono">                       
+                    </div>
+                    <div class="inputGroup">
+                        <label for="provincia">Provincia *</label>
+                        <select name="provincia" id="provincia">
+                            <option value="Seleccione" id="Seleccione" selected>Seleccione</option>
+                            <option value="value2" id="ssss">Value</option>
+                            <option value="value3" id="ssss">Value</option>
+                        </select>
+                    </div>
+                    <div class="inputGroup">
+                        <label>¿En qué servicios estás interesado? *</label>                        
+                        <div class="inputGroupCheckbox">                            
+                            <input type="checkbox" id="auditoriaExterna" name="auditoriaExterna" value="auditoriaExterna">
+                            <label for="auditoriaExterna">Auditoría externa</label>
+                        </div>
+                        <div class="inputGroupCheckbox">                            
+                            <input type="checkbox" id="controlInterno" name="controlInterno" value="controlInterno">  
+                            <label for="controlInterno">Control interno</label>
+                        </div>
+                        <div class="inputGroupCheckbox">                            
+                            <input type="checkbox" id="prevencion" name="prevencion" value="prevencion">
+                            <label for="prevencion">Prevención de lavado de activos</label>
+                        </div>                                     
+                    </div>
+                    <div class="inputGroup">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea required name="mensaje" id="mensaje" cols="10" rows="5"></textarea>                        
+                    </div>
+
+                    <input type="submit" id="enviar" value="Enviar"> 
+                </form>  
+            </div>   
+        </div>
+
+
+        
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="foot">
+
+        <div class="foot-container">
+            <img src="../assets/img/FONDO-AZUL.png" width="190px">
+
+            <div class="foot-contacto">
+                <h4>CONTACTO</h4>
+
+                <div class="contenedor-contacto">
+                    <div class="contacto">
+                        <a href="#">
+                            <i class='bx bxs-envelope'></i>
+                            <p>info@sarm-audit.com</p>
+                        </a>                    
+                    </div>
+                    <div class="contacto">
+                        <a href="https://wa.me/593989357505?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" target="_blank">
+                            <i class='bx bxl-whatsapp bx-tada-hover' ></i>
+                            <p>+593 (09) 89357505</p>
+                        </a>                    
+                    </div>
+                    <div class="contacto">
+                        <a href="#">
+                            <i class='bx bxl-linkedin-square bx-tada-hover'></i>
+                            <p>www.linkedin.com/sarm-audit</p>
+                        </a>                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="foot-horario">
+                <h4>HORARIOS DE ATENCIÓN</h4>
+                <p style="margin-top: 20px;">Lunes a Viernes: 9h a 17h</p>
+                <p>Sabado: 9h a 13h</p>
+                <p style="margin-bottom:0;">Feriados: No hay atención</p>
+            </div>
+
+            <div class="foot-secciones">
+                <h4>SECCIONES</h4>
+                <a style="margin-top: 20px;" class="header-item" href="index.html">Inicio</a>
+                <a class="header-item" href="nosotros.html">Nosotros</a>
+                <a class="header-item" href="servicios.html">Servicios</a>
+                <a class="header-item" href="contacto.html">Contacto</a>
+            </div>
+        </div>
+
+        <div class="copy">
+            <p>Guayaquil - Ecuador</p>
+            <p>SARM-AUDIT © 2022 Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

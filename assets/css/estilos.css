@@ -1,5 +1,12 @@
 * {
     margin: 0;
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+}
+*:before, *:after {
+    box-sizing: inherit;
 }
 
 
@@ -13,7 +20,8 @@ body {
 
 a{
     text-decoration: none;
-    color: #0f1a2c;    
+    color: #0f1a2c;
+    text-align: center;    
 }
 
 h1 {
@@ -23,13 +31,12 @@ h1 {
     margin-bottom: 80px;
 }
 
-h2 {
+p, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-p, a {
+p, label, input, textarea, select {
     font-size: 14pt;
-    text-align: center;
 }
 
 
@@ -43,6 +50,12 @@ p, a {
     overflow:hidden;
     width: 100%;*/
     padding: 20px;
+}
+
+.menu-contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .menu-navbar{
@@ -98,18 +111,21 @@ p, a {
     color: #0f1a2c;
 }
 
-.cuerpo-faqs, .cuerpo-certificaciones{
-    background-color: #E0FDFF;
+.cuerpo-faqs, .cuerpo-certificaciones, .cuerpo-contacto{
+    background: rgb(92,190,208);
+    background: linear-gradient(125deg, rgba(92,190,208,1) 0%, rgba(224,253,255,1) 52%);
     color: #0f1a2c;
 }
 
-.cuerpo-servicios, .cuerpo-faqs, .cuerpo-contacto, .cuerpo-mv, .cuerpo-valores, .cuerpo-certificaciones, .cuerpo-equipo {
+.cuerpo-servicios, .cuerpo-faqs, .cuerpo-mv, .cuerpo-valores, .cuerpo-certificaciones, .cuerpo-equipo {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 80px 40px 80px 40px;
 }
+
+
 
 
 /* --- CUERPO SERVICIOS ---*/
@@ -253,32 +269,6 @@ p, a {
 }
 
 
-/* --- CUERPO CONTACTO ---*/
-
-.cuerpo-contacto .contenedor-contacto {
-    display: flex;
-    flex-direction: row;  
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    width: 100%;
-}
-
-.cuerpo-contacto .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-}
-
-.cuerpo-contacto .contacto i {
-    font-size: 50px;
-}
-
-.cuerpo-contacto .contacto p {
-    text-align: center;
-}
 
 
 
@@ -311,6 +301,8 @@ p, a {
 }
 
 
+
+
 /* --- CUERPO VALOR ---*/
 
 .contenedor-valores {
@@ -338,6 +330,8 @@ p, a {
 }
 
 
+
+
 /* --- CUERPO CERTIFICACIONES ---*/
 
 .contenedor-certificaciones {
@@ -363,16 +357,15 @@ p, a {
     margin-top: 20px;
 }
 
-/*.certificacion .medal {
-    font-size: 60pt;
-}*/
-
 .certificacion .pdf {
     font-size: 30pt;
     margin-top: 20px;
     cursor: pointer;
     color: #606877;
 }
+
+
+
 
 
 /* --- CUERPO EQUIPO ---*/
@@ -420,49 +413,223 @@ p, a {
 }
 
 
-/* --- CUERPO EQUIPO ---*/
 
-.contenedor-blog {
+
+
+/* --- CUERPO FORMULARIO ---*/
+
+.cuerpo-formulario {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    padding: 80px 20px 80px 20px;
-    gap: 40px;
-    
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 80px 40px 80px 40px;
 }
 
-.blog {
+.contenedor-formulario-letras {
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 40%;
+}
+
+.contenedor-contacto-letras h1{
+    text-align: left; 
+    width: fit-content;
+}
+
+.contenedor-formulario-letras p{   
+    text-align: left; 
+    font-size: 20pt;
+}
+
+.contenedor-formulario{
+    width: 50%;
+}
+
+form{
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    width: 90%;
+    border-radius: 20px;
+}
+
+form input[type="text"], form input[type="tel"],form input[type="email"], form textarea, select{
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #606877;
+    border-radius: 10px;
+}
+
+form input[type="submit"]{
+    background-color: #0f1a2c;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 30%;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+form input[type="submit"]:hover{
+    background-color: #4D5E80;
+    transition: ease-in 0.2s;
+}
+
+form input[type="submit"]:not(:hover){
+    background-color: #0f1a2c;
+    transition: ease-in 0.2s;
+}
+
+
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    width: 100%;
+    gap: 10px;
+}	
+
+.inputGroupCheckbox{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.inputGroupCheckbox input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+}
+
+
+
+
+
+/* --- CUERPO CONTACTO ---*/
+
+.cuerpo-contacto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 90px 40px 90px 40px;
+}
+
+.cuerpo-contacto .contenedor-contacto {
+    display: flex;
+    flex-direction: row;  
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 40%;
+}
+.contenedor-contacto-letras{
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    width: 40%;
+}
+
+.contenedor-contacto-letras p{   
+    text-align: right; 
+    font-size: 20pt;
+}
+
+.contenedor-contacto-letras h1{
+    text-align: right; 
+    width: fit-content;
+}
+
+.cuerpo-contacto .contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+.cuerpo-contacto .contacto i {
+    font-size: 50px;
+}
+
+.cuerpo-contacto .contacto p {
+    text-align: center;
+}
+
+
+
+
+/* --- CUERPO HORARIOS ---*/
+
+.cuerpo-horario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 90px 40px 90px 40px;
+}
+
+.contenedor-horario-letras{
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;
     justify-content: space-between;
-    background: #F1F1F1;
-    padding: 30px;
-    border-radius: 20px;
-    box-sizing: border-box;
-    width: 25%;    
+    flex-wrap: wrap;
+    align-content: flex-end;
+    width: 40%;
 }
 
-.blog img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+.contenedor-horario-letras p{   
+    text-align: left; 
+    font-size: 20pt;
 }
 
-.blog i {
-   color: #606877;
-   display: inline;
+.contenedor-horario-letras h1{
+    text-align: left; 
+    width: fit-content;
 }
 
-.blog p {
-    font-size: 12pt;
-    display: inline;
- }
+.horario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 
-.blog h2 {
-    font-weight: 500;
-    margin: 20px 0px 20px 0px;
+.contenedor-dias, .contenedor-horas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.horario p:nth-child(1), .horario p:nth-child(2){
+    width: 250px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #606877;
 }
 
 
@@ -524,12 +691,6 @@ p, a {
     display: inline;
 }
 
-.copy p{
-    padding-top: 20px;
-    border-top: #F1F1F1 solid 1px;
-    text-align: center;
-}
-
 .foot-container {
     display: flex;
     flex-direction: row;
@@ -544,8 +705,8 @@ p, a {
     display: flex;
     flex-direction: column;  
     justify-content: center;
-    gap: 10px;
     margin-top: 20px;
+    gap: 10px;
 }
 
 .foot-contacto .contacto {
@@ -553,6 +714,10 @@ p, a {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+}
+
+.foot-contacto a{
+    display: flex;
     gap: 5px;
 }
 
@@ -560,6 +725,15 @@ p, a {
     margin-bottom: 12px;
 }
 
+.copy p:nth-child(1){
+    padding-top: 17px;
+    border-top: #c6c6c6 solid 0.5px;    
+}
+
+.copy p {
+    text-align: center;
+    margin-bottom: 5px;
+}
 
 
 
