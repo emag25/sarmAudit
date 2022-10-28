@@ -323,6 +323,7 @@ p, label, input, textarea, select {
     justify-content: center;
     box-sizing: border-box;
     padding: 40px;
+    gap: 20px;
 }
 
 .valor i {
