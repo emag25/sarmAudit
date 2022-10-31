@@ -26,16 +26,28 @@ a{
 
 h1 {
     text-align: center;
-    border-bottom: #68d2df solid;
     font-size: 25pt;
     margin-bottom: 80px;
+    position: relative;
+    padding-bottom: 10px;
 }
+
+h1:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    bottom: 0;
+    left: 25%;    
+    right: 25%;
+    border-bottom: #68d2df solid 5px;
+}
+
 
 p, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-p, label, input, textarea, select {
+p, a, label, input, textarea, select {
     font-size: 14pt;
 }
 
@@ -70,13 +82,48 @@ p, label, input, textarea, select {
     margin: 20px;
 }
 
-.menu a{
+.menu-collapse a{
     text-decoration: none;
+    font-weight: 500;
     color: white;
+    position: relative;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
 }
 
+.menu-collapse a:focus, .menu a:hover {
+  color: #68d2df;
+}
 
+.menu-collapse a:focus:after, .menu a:hover:after {
+  width: 100%;
+  left: 0%;
+}
 
+.menu-collapse a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -5px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background-color: #68d2df;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+.activa::before{
+    content: "";
+    position: absolute;
+    width: 10%;
+    bottom: 0;
+    left: 45%;  
+    bottom: -5px;  
+    border-bottom: #68d2df solid 3px;
+}
 
 
 /* --- ENCABEZADO ---*/
@@ -94,7 +141,20 @@ p, label, input, textarea, select {
     text-align: center;
     width: 50%;
     margin-top: 60px;
-    font-size: 20pt;
+    font-size: 20pt;      
+    animation: bajar 1s ease-out;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes bajar {
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .encabezado h1 {
@@ -447,10 +507,11 @@ p, label, input, textarea, select {
 .contenedor-formulario-letras p{   
     text-align: left; 
     font-size: 20pt;
+    color: rgb(75, 75, 75);
 }
 
 .contenedor-formulario{
-    width: 50%;
+    width: 40%;
 }
 
 form{
@@ -462,7 +523,7 @@ form{
     flex-wrap: wrap;
     gap: 20px;
     padding: 50px;
-    width: 90%;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -485,7 +546,7 @@ form input[type="submit"]{
 }
 
 form input[type="submit"]:hover{
-    background-color: #4D5E80;
+    background-color: #606877;
     transition: ease-in 0.2s;
 }
 
@@ -553,6 +614,7 @@ form input[type="submit"]:not(:hover){
 .contenedor-contacto-letras p{   
     text-align: right; 
     font-size: 20pt;
+    color: rgb(75, 75, 75);
 }
 
 .contenedor-contacto-letras h1{
@@ -573,6 +635,15 @@ form input[type="submit"]:not(:hover){
 
 .cuerpo-contacto .contacto p {
     text-align: center;
+}
+
+.cuerpo-contacto .contacto a:hover {
+    transform: scale(1.1);
+    transition: ease-in 0.3s;
+}
+
+.cuerpo-contacto .contacto a:not(hover) {
+    transition: ease-in 0.3s;
 }
 
 
@@ -597,12 +668,13 @@ form input[type="submit"]:not(:hover){
     justify-content: space-between;
     flex-wrap: wrap;
     align-content: flex-end;
-    width: 40%;
+    width: 40%;    
 }
 
 .contenedor-horario-letras p{   
     text-align: left; 
     font-size: 20pt;
+    color: rgb(75, 75, 75);
 }
 
 .contenedor-horario-letras h1{
@@ -686,6 +758,10 @@ form input[type="submit"]:not(:hover){
     display: block;
 }
 
+.foot-secciones a:hover, .foot-contacto p:hover{
+    color: #c6c6c6;
+} 
+
 .foot h4 {
     margin-bottom: 20px;
     border-bottom: #68d2df solid 1px;
@@ -737,6 +813,38 @@ form input[type="submit"]:not(:hover){
 }
 
 
+
+
+/* --- EFECTOS ---*/
+
+.fadeTop {
+    opacity: 0; 
+    transform: translate(0vh, 15vh);
+    transition: all 1s;
+}
+
+.fadeBottom {
+    opacity: 0; 
+    transform: translate(0vh, -15vh);
+    transition: all 1s;
+}
+
+.fadeRight {
+    opacity: 0;
+    transform: translate(15vh, 0vh);
+    transition: all 1s;
+}
+
+.fadeLeft {
+    opacity: 0;
+    transform: translate(-15vh, 0vh);
+    transition: all 1s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
 
 
 
