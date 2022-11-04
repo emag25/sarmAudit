@@ -7,7 +7,6 @@
 window.addEventListener('scroll', function()  {
     let elements = document.getElementsByClassName('scroll-content');
     let screenSize = window.innerHeight;
-    console.log(screenSize+"  -  "+elements);
     
     for(var i = 0; i < elements.length; i++) {
         var element = elements[i];

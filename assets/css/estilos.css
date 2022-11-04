@@ -47,8 +47,13 @@ p, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-p, a, label, input, textarea, select {
+a, label, input, textarea, select {
     font-size: 14pt;
+}
+
+p {
+    font-size: 17pt;
+    color: rgb(75, 75, 75);
 }
 
 
@@ -80,11 +85,7 @@ p, a, label, input, textarea, select {
 
 .menu-collapse a{
     margin: 20px;
-}
-
-.menu-collapse a{
     text-decoration: none;
-    font-weight: 500;
     color: white;
     position: relative;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -144,6 +145,7 @@ p, a, label, input, textarea, select {
     font-size: 20pt;      
     animation: bajar 1s ease-out;
     animation-fill-mode: forwards; 
+    color: white;
 }
 
 @keyframes bajar {
@@ -171,13 +173,13 @@ p, a, label, input, textarea, select {
     color: #0f1a2c;
 }
 
-.cuerpo-faqs, .cuerpo-certificaciones, .cuerpo-contacto{
+.cuerpo-faqs, .cuerpo-valores, .cuerpo-redes{
     background: rgb(92,190,208);
     background: linear-gradient(125deg, rgba(92,190,208,1) 0%, rgba(224,253,255,1) 52%);
     color: #0f1a2c;
 }
 
-.cuerpo-servicios, .cuerpo-faqs, .cuerpo-mv, .cuerpo-valores, .cuerpo-certificaciones, .cuerpo-equipo {
+.cuerpo-servicios, .cuerpo-faqs, .cuerpo-valores, .cuerpo-equipo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -186,6 +188,7 @@ p, a, label, input, textarea, select {
 }
 
 
+/* --------------------- PAGINA INICIO ---------------------*/
 
 
 /* --- CUERPO SERVICIOS ---*/
@@ -242,7 +245,6 @@ p, a, label, input, textarea, select {
     letter-spacing: 4px;
     font-size: 14px;
     padding-right: 12px;
-    text-transform: uppercase;
 }
 
 .more svg {
@@ -274,6 +276,10 @@ p, a, label, input, textarea, select {
     transition: transform 0.25s ease-out;
 }
 
+.more:hover {
+    font-weight: bold;
+}
+
 .more:hover .hover-underline-animation:after {
     transform: scaleX(1);
     transform-origin: bottom left;
@@ -281,83 +287,52 @@ p, a, label, input, textarea, select {
 
 
 
-/* --- CUERPO FAQs ---*/
-
-.contenedor-faqs {
-    width: 70%;
-}
-
-.faqs p {
-    text-align: justify;
-}
-
-.question {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background: #0f1a2c;
-    color: white;
-    padding: 20px;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-.question i, .question2 i{
-    font-size: 30px;
-}
-
-.answer {
-    margin-bottom: 10px;
-    padding: 20px;
-    display: none;
-}
-
-.question2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    border-top: #0f1a2c solid 1px;    
-    padding: 20px;
-    cursor: pointer;
-}
-
-.answer2 {
-    border-top: #0f1a2c solid 1px;
-    padding: 20px;
-    display: none;
-}
+/* --- CUERPO CONTACTANOS ---*/
 
 
 
 
+/* --- CUERPO NOSOTROS ---*/
+
+
+
+
+
+
+
+
+/* --------------------- PAGINA NOSOTROS ---------------------*/
 
 /* --- CUERPO MV ---*/
 
-.contenedor-mv {
+.cuerpo-mv {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 40px;
+    padding: 80px 40px 80px 40px;
     width: 100%;
 }
 
-.mv {
+.contenedor-mision, .contenedor-vision {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 40px;
-    width: 35%;
-    background: #F1F1F1;
-    border-radius: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 0 40px 0 40px;
 }
 
-.mv h2 {
-    margin-bottom: 20px;
+.contenedor-vision {
+    border-left: 1px solid #0f1a2c;
+}
+
+.cuerpo-mv p {
+    width: 90%;
+    font-size: 17pt;
+    font-style: italic;
 }
 
 
@@ -372,8 +347,7 @@ p, a, label, input, textarea, select {
     justify-content: space-evenly;
     flex-wrap: wrap;
     width: 100%;
-    gap: 10px;
-    margin-top: 40px;
+    gap: 40px;
 }
 
 .valor {
@@ -382,54 +356,36 @@ p, a, label, input, textarea, select {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    padding: 40px;
+    padding: 10px;
     gap: 20px;
+}
+
+.valor:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+.valor:not(hover) {
+    transition: all 0.3s ease;
 }
 
 .valor i {
-    font-size: 50pt;
-}
-
-
-
-
-/* --- CUERPO CERTIFICACIONES ---*/
-
-.contenedor-certificaciones {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 20px;
-}
-
-.certificacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
+    border: 1px solid #3a4865;
+    border-radius: 50%;
     padding: 20px;
+    color: white;
+    font-size: 40pt;
+    background-color: #3a4865;
 }
-
-.certificacion h2 {
-    margin-top: 20px;
-}
-
-.certificacion .pdf {
-    font-size: 30pt;
-    margin-top: 20px;
-    cursor: pointer;
-    color: #606877;
-}
-
 
 
 
 
 /* --- CUERPO EQUIPO ---*/
+
+.cuerpo-equipo {
+    padding: 80px 0 80px 0;
+}
 
 .contenedor-miembro {
     display: flex;
@@ -437,22 +393,23 @@ p, a, label, input, textarea, select {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 40px;
     width: 100%;
     margin-top: 60px;
+    background-color: #F1F1F1;
 }
 
-.miembro {
+.todo-miembro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    background: #F1F1F1;
+    justify-content: center;  
     padding: 40px;
     margin: 20px 0 20px 0;
-    width: 35%;
-    border-radius: 20px;
+}	
+
+.miembro {
+    display: none;
+    width: 60%;
 }
 
 .miembro img {
@@ -471,6 +428,45 @@ p, a, label, input, textarea, select {
 
 .miembro h2 {
     margin: 20px 0 5px 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 30px 2px 0 2px;
+    background-color: #c6c6c6;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #606877;
+}
+  
+.prev, .next {
+    cursor: pointer;
+    padding: 20px;
+    color: #3a4865;
+    font-weight: bold;
+    font-size: 40pt;
+    border-radius: 50%;
+    transition: 0.6s ease;    
+}
+
+.prev:hover, .next:hover {
+    transform: scale(1.2);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.3s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 
@@ -499,7 +495,7 @@ p, a, label, input, textarea, select {
     width: 40%;
 }
 
-.contenedor-contacto-letras h1{
+.contenedor-redes-letras h1{
     text-align: left; 
     width: fit-content;
 }
@@ -580,11 +576,11 @@ form input[type="submit"]:not(:hover){
 
 
 
+/* --------------------- PAGINA CONTACTO ---------------------*/
 
+/* --- CUERPO REDES ---*/
 
-/* --- CUERPO CONTACTO ---*/
-
-.cuerpo-contacto{
+.cuerpo-redes{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -593,7 +589,7 @@ form input[type="submit"]:not(:hover){
     padding: 90px 40px 90px 40px;
 }
 
-.cuerpo-contacto .contenedor-contacto {
+.cuerpo-redes .contenedor-redes {
     display: flex;
     flex-direction: row;  
     justify-content: center;
@@ -601,7 +597,7 @@ form input[type="submit"]:not(:hover){
     gap: 40px;
     width: 40%;
 }
-.contenedor-contacto-letras{
+.contenedor-redes-letras{
     display: flex;
     flex-direction: column;    
     align-items: flex-end;
@@ -611,38 +607,38 @@ form input[type="submit"]:not(:hover){
     width: 40%;
 }
 
-.contenedor-contacto-letras p{   
+.contenedor-redes-letras p{   
     text-align: right; 
     font-size: 20pt;
     color: rgb(75, 75, 75);
 }
 
-.contenedor-contacto-letras h1{
+.contenedor-redes-letras h1{
     text-align: right; 
     width: fit-content;
 }
 
-.cuerpo-contacto .contacto {
+.cuerpo-redes .redes {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.cuerpo-contacto .contacto i {
-    font-size: 50px;
+.cuerpo-redes .redes i {
+    font-size: 50pt;
 }
 
-.cuerpo-contacto .contacto p {
+.cuerpo-redes .redes p {
     text-align: center;
 }
 
-.cuerpo-contacto .contacto a:hover {
+.cuerpo-redes .redes a:hover {
     transform: scale(1.1);
     transition: ease-in 0.3s;
 }
 
-.cuerpo-contacto .contacto a:not(hover) {
+.cuerpo-redes .redes a:not(hover) {
     transition: ease-in 0.3s;
 }
 
@@ -651,7 +647,7 @@ form input[type="submit"]:not(:hover){
 
 /* --- CUERPO HORARIOS ---*/
 
-.cuerpo-horario {
+.cuerpo-horario, .cuerpo-contacto {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -661,7 +657,7 @@ form input[type="submit"]:not(:hover){
     padding: 90px 40px 90px 40px;
 }
 
-.contenedor-horario-letras{
+.contenedor-horario-letras, .contenedor-contacto-letras{
     display: flex;
     flex-direction: column;    
     align-items: flex-start;
@@ -671,13 +667,13 @@ form input[type="submit"]:not(:hover){
     width: 40%;    
 }
 
-.contenedor-horario-letras p{   
+.contenedor-horario-letras p, .contenedor-contacto-letras p{   
     text-align: left; 
     font-size: 20pt;
     color: rgb(75, 75, 75);
 }
 
-.contenedor-horario-letras h1{
+.contenedor-horario-letras h1, .contenedor-contacto-letras h1{
     text-align: left; 
     width: fit-content;
 }

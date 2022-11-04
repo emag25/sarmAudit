@@ -15,6 +15,8 @@
 
     <link href="assets/css/estilos.css" rel="stylesheet" />
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/carousel.js"></script>
 
     <style>
         .encabezado img {
@@ -45,9 +47,8 @@
     <!-- ENCABEZADO -->
     <div class="encabezado">
         <img src="../assets/img/LOGO-SOLO.png" height="300px" />
-        <h1>¿QUIÉNES SOMOS?</h1>
-        <p>Una firma en la que puedes confiar!
-        </p>
+        <h1>NOSOTROS</h1>
+        <p>Descubre quiénes somos y qué hacemos</p>
     </div>
 
     <!-- BODY -->
@@ -55,22 +56,23 @@
 
         <!-- MISION Y VISION -->
         <div class="cuerpo-mv">
-            <h1>MISIÓN, VISIÓN Y VALORES</h1>
-            <div class="contenedor-mv">
-                <div class="mv">
-                    <h2>MISIÓN</h2>
-                    <p>Generar confianza al cliente del servicio personalizado que hará cada personal de apoyo de SARM-AUDIT, identificando con eficiencia y eficacia los posibles riesgos en los procesos del trabajo y a su vez otorgar soluciones para su crecimiento.
-                    </p>
-                </div>
-                <div class="mv">
-                    <h2>VISIÓN</h2>
-                    <p>Asegurar que SARM-AUDIT será una de las firmas de auditoría que ofrezca servicios profesionales con un equipo de trabajo de calidad, que están en constante capacitación e innovación, apto para resolver cualquier duda, generando un valor agregado para cada uno de nuestros clientes.
-                    </p>
-                </div>
+            <div class="contenedor-mision">                
+                <h1>MISIÓN</h1>
+                <p class="scroll-content fadeLeft">“Generar confianza al cliente del servicio personalizado que hará cada personal de apoyo de SARM-AUDIT, identificando con eficiencia y eficacia los posibles riesgos en los procesos del trabajo y a su vez otorgar soluciones para su crecimiento.”
+                </p>
             </div>
+            <div class="contenedor-vision">
+                <h1>VISIÓN</h1>
+                <p class="scroll-content fadeRight">“Asegurar que SARM-AUDIT será una de las firmas de auditoría que ofrezca servicios profesionales con un equipo de trabajo de calidad, que están en constante capacitación e innovación, apto para resolver cualquier duda, generando un valor agregado para cada uno de nuestros clientes.”
+                </p>
+            </div>
+        </div>
 
-            <div class="contenedor-valores">               
-                
+
+        <!-- VALORES -->
+        <div class="cuerpo-valores">
+            <h1>VALORES</h1>
+            <div class="contenedor-valores scroll-content fadeBottom">    
                 <div class="valor">
                     <i class='bx bxs-landmark'></i>
                     <p>Responsabilidad</p>
@@ -90,58 +92,70 @@
                 <div class="valor">
                     <i class='bx bxs-lock'></i>
                     <p>Confidencialidad</p>
-                </div>
-                
+                </div>                
             </div>
         </div>
-
-
-        <!-- CERTIFICACIONES -->
-        <div class="cuerpo-certificaciones">
-            <h1>CERTIFICACIONES</h1>
-            <div class="contenedor-certificaciones">
-                <div class="certificacion">
-                    <img src="../assets/img/medal.png" width="100px">
-                    <h2>Calificación de auditor externo</h2>
-                    <p>CPA. Rogelio Solórzano</p>
-                    <a href="calificacionRogelio.html" target="_blank"><i class='bx bxs-file-pdf pdf'></i></a>                    
-                </div>
-                <div class="certificacion">
-                    <img src="../assets/img/medal.png" width="100px">
-                    <h2>Membresía en Auditool</h2>
-                    <p>CPA. Rogelio Solórzano</p>                    
-                    <a href="membresiaRogelio.html" target="_blank"><i class='bx bxs-file-pdf pdf'></i></a>      
-                </div>
-                <div class="certificacion">
-                    <img src="../assets/img/medal.png" width="100px">
-                    <h2>Membresía en Auditool</h2>
-                    <p>CPA. Johanna Apráez</p>
-                    <a href="membresiaJohanna.html" target="_blank"><i class='bx bxs-file-pdf pdf'></i></a>      
-                </div>
-            </div>
-        </div>
-
+        
 
         <!-- NUESTRO EQUIPO -->
         <div class="cuerpo-equipo">
             <h1>NUESTRO EQUIPO</h1>
             <div class="contenedor-miembro">
-                <div class="miembro">
-                    <img src="../assets/img/miembro1.jpg" height="50px" />
-                    <h2>Rogelio Ricardo Solórzano Litardo</h2>
-                    <h3>Contador público autorizado</h3>
-                    <p>descripcion de la persona cdsgdfbsdgsd fgrthsb gadvfdvsdvsb dfb
-                        sdfervfb fdghbdfhdfsbsfdb sdfervfb fdghbdfhdfsbsfdb sdfervfb fdghbdfhdfsbsfdb
-                    </p>
+                <a class="prev" onclick="plusMiembros(-1)">&#10094;</a>
+
+                <div class="miembro fade" style="display: block;">
+                    <div class="todo-miembro">
+                        <img src="../assets/img/miembro1.png" height="50px" />
+                        <div class="contenido-miembro">
+                            <h2>Rogelio Ricardo Solórzano Litardo</h2>
+                            <h3>Founder & CEO</h3>
+                            <p>descripcion de la persona cdsgdfbsdgsd fgrthsb gadvfdvsdvsb dfb
+                                sdfervfb fdghbdfhdfsbsfdb sdfervfb fdghbdfhdfsbsfdb sdfervfb fdghbdfhdfsbsfdb
+                            </p>
+                        </div>    
+                    </div>                                    
                 </div>
-                <div class="miembro">
-                    <img src="../assets/img/miembro2.jpg" height="50px" />
-                    <h2>Johanna Mishelle Apráez González</h2>
-                    <h3>Contadora público autorizada</h3>
-                    <p>descripcion de la persona cdsgdfbsdgsd fgrthsb gadvfdvsdvsb dfb
-                        sdfervfb fdghbdfhdfsbsfdb sdfervfb fdghbdfhdfsbsfdb sdfervfb fdghbdfhdfsbsfdb
-                    </p>
+                
+                <div class="miembro fade">
+                    <div class="todo-miembro">
+                        <img src="../assets/img/miembro2.jpg" height="50px" />
+                        <h2>Johanna Mishelle Apráez González</h2>
+                        <h3>Co-Founder</h3>
+                        <p>descripcion de la persona cdsgdfbsdgsd fgrthsb gadvfdvsdvsb dfb
+                            sdfervfb fdghbdfhdfsbsfdb sdfervfb fdghbdfhdfsbsfdb sdfervfb fdghbdfhdfsbsfdb
+                        </p>
+                    </div>                    
                 </div>
+
+                <div class="miembro fade">
+                    <div class="todo-miembro">
+                        <img src="../assets/img/miembro4.png" height="50px" />
+                        <h2>Sara Renata Polit Salamanca</h2>
+                        <h3>Auditora Junior</h3>
+                        <p>descripcion de la persona cdsgdfbsdgsd fgrthsb gadvfdvsdvsb dfb
+                            sdfervfb fdghbdfhdfsbsfdb sdfervfb fdghbdfhdfsbsfdb sdfervfb fdghbdfhdfsbsfdb
+                        </p>
+                    </div>                    
+                </div>
+
+                <div class="miembro fade">
+                    <div class="todo-miembro">
+                        <img src="../assets/img/miembro3.png" height="50px" />
+                        <h2>Emely Mishell Apráez González</h2>
+                        <h3>Software developer</h3>
+                        <p>descripcion de la persona cdsgdfbsdgsd fgrthsb gadvfdvsdvsb dfb
+                            sdfervfb fdghbdfhdfsbsfdb sdfervfb fdghbdfhdfsbsfdb sdfervfb fdghbdfhdfsbsfdb
+                        </p>
+                    </div>                    
+                </div>
+                
+                <a class="next" onclick="plusMiembros(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
             </div>
         </div>
 
