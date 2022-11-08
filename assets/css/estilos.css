@@ -51,7 +51,7 @@ a, label, input, textarea, select {
     font-size: 14pt;
 }
 
-p {
+p, li{
     font-size: 17pt;
     color: rgb(75, 75, 75);
 }
@@ -473,106 +473,74 @@ p {
 
 
 
-/* --- CUERPO FORMULARIO ---*/
 
-.cuerpo-formulario {
+
+
+
+/* --------------------- PAGINA SERVICIOS ---------------------*/
+
+/* --- CUERPO SERVICIOS ---*/
+
+.cuerpo-servicios{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 80px 40px 80px 40px;
-}
-
-.contenedor-formulario-letras {
-    display: flex;
-    flex-direction: column;    
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    width: 40%;
-}
-
-.contenedor-redes-letras h1{
-    text-align: left; 
-    width: fit-content;
-}
-
-.contenedor-formulario-letras p{   
-    text-align: left; 
-    font-size: 20pt;
-    color: rgb(75, 75, 75);
-}
-
-.contenedor-formulario{
-    width: 40%;
-}
-
-form{
-    background-color: #f4f4f4;
-    display: flex;
-    flex-direction: column;  
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 50px;
+    gap: 40px;
     width: 100%;
-    border-radius: 20px;
 }
 
-form input[type="text"], form input[type="tel"],form input[type="email"], form textarea, select{
-    width: 100%;
-    padding: 10px;
-    border: solid 1px #606877;
-    border-radius: 10px;
+.contenido-servicios{
+    width: 60%;
 }
 
-form input[type="submit"]{
-    background-color: #0f1a2c;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 30%;
-    margin-top: 20px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-form input[type="submit"]:hover{
-    background-color: #606877;
-    transition: ease-in 0.2s;
-}
-
-form input[type="submit"]:not(:hover){
-    background-color: #0f1a2c;
-    transition: ease-in 0.2s;
-}
-
-
-.inputGroup{
+.contenedor-titulos{    
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: left;
-    width: 100%;
-    gap: 10px;
-}	
-
-.inputGroupCheckbox{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
     align-items: center;
-
+    justify-content: center;
+    width: 30%;
 }
 
-.inputGroupCheckbox input[type="checkbox"]{
-    width: 15px;
-    height: 15px;
+.servicio {   
+    width: 100%; 
+    padding: 20px;
+    margin: 0;    
+    border: 0;
 }
+
+.now {
+    background: #F1F1F1;
+    border-right: #68d2df solid 5px;
+}
+
+.servicio:hover{
+    background: #F1F1F1;
+    
+}
+
+.descripcion {
+    min-height: 600px;
+    display: none;
+}
+
+.descripcion p, .descripcion li{
+    text-align: justify;
+}
+
+.descripcion .contenido{    
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
 
 
 
@@ -700,6 +668,111 @@ form input[type="submit"]:not(:hover){
     padding-bottom: 20px;
     border-bottom: solid 1px #606877;
 }
+
+
+
+
+/* --- CUERPO FORMULARIO ---*/
+
+.cuerpo-formulario {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 80px 40px 80px 40px;
+}
+
+.contenedor-formulario-letras {
+    display: flex;
+    flex-direction: column;    
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 40%;
+}
+
+.contenedor-redes-letras h1{
+    text-align: left; 
+    width: fit-content;
+}
+
+.contenedor-formulario-letras p{   
+    text-align: left; 
+    font-size: 20pt;
+    color: rgb(75, 75, 75);
+}
+
+.contenedor-formulario{
+    width: 40%;
+}
+
+form{
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+form input[type="text"], form input[type="tel"],form input[type="email"], form textarea, select{
+    width: 100%;
+    padding: 10px;
+    border: solid 1px #606877;
+    border-radius: 10px;
+}
+
+form input[type="submit"]{
+    background-color: #0f1a2c;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 30%;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+form input[type="submit"]:hover{
+    background-color: #606877;
+    transition: ease-in 0.2s;
+}
+
+form input[type="submit"]:not(:hover){
+    background-color: #0f1a2c;
+    transition: ease-in 0.2s;
+}
+
+
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    width: 100%;
+    gap: 10px;
+}	
+
+.inputGroupCheckbox{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.inputGroupCheckbox input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+}
+
 
 
 
