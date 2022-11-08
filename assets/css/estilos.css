@@ -173,18 +173,27 @@ p, li{
     color: #0f1a2c;
 }
 
-.cuerpo-faqs, .cuerpo-valores, .cuerpo-redes{
+.cuerpo-valores, .cuerpo-control, .cuerpo-redes{
     background: rgb(92,190,208);
     background: linear-gradient(125deg, rgba(92,190,208,1) 0%, rgba(224,253,255,1) 52%);
     color: #0f1a2c;
+    padding: 90px 40px 90px 40px;
 }
 
-.cuerpo-servicios, .cuerpo-faqs, .cuerpo-valores, .cuerpo-equipo {
+.cuerpo-auditoria, .cuerpo-prevencion, .cuerpo-valores, .cuerpo-equipo, .cuerpo-control {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 80px 40px 80px 40px;
+    flex-wrap: wrap;
+    padding: 90px 40px 90px 40px;
+}
+
+.cuerpo-mv, .cuerpo-horario, .cuerpo-redes, .cuerpo-formulario, .cuerpo-contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 90px 40px 90px 40px;
 }
 
 
@@ -306,12 +315,8 @@ p, li{
 /* --- CUERPO MV ---*/
 
 .cuerpo-mv {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 80px 40px 80px 40px;
     width: 100%;
 }
 
@@ -481,61 +486,30 @@ p, li{
 
 /* --- CUERPO SERVICIOS ---*/
 
-.cuerpo-servicios{
+.contenido-auditoria, .contenido-prevencion {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     gap: 40px;
-    width: 100%;
 }
 
-.contenido-servicios{
-    width: 60%;
-}
-
-.contenedor-titulos{    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-}
-
-.servicio {   
-    width: 100%; 
-    padding: 20px;
-    margin: 0;    
-    border: 0;
-}
-
-.now {
-    background: #F1F1F1;
-    border-right: #68d2df solid 5px;
-}
-
-.servicio:hover{
-    background: #F1F1F1;
-    
-}
-
-.descripcion {
-    min-height: 600px;
-    display: none;
-}
-
-.descripcion p, .descripcion li{
+.cuerpo-auditoria p, .cuerpo-auditoria li, .cuerpo-control p, .cuerpo-control li, .cuerpo-prevencion p, .cuerpo-prevencion li {
     text-align: justify;
 }
 
-.descripcion .contenido{    
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.contenido-auditoria div, .contenido-prevencion div{
+    width: 40%;
 }
+
+.contenido-control {
+    width: 80%;
+}
+
+.contenido-prevencion li, .contenido-auditoria li {
+    margin: 10px 0 10px 0;
+}
+
 
 
 
@@ -549,12 +523,8 @@ p, li{
 /* --- CUERPO REDES ---*/
 
 .cuerpo-redes{
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 90px 40px 90px 40px;
 }
 
 .cuerpo-redes .contenedor-redes {
@@ -616,13 +586,9 @@ p, li{
 /* --- CUERPO HORARIOS ---*/
 
 .cuerpo-horario, .cuerpo-contacto {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
     gap: 20px;
-    padding: 90px 40px 90px 40px;
 }
 
 .contenedor-horario-letras, .contenedor-contacto-letras{
@@ -675,8 +641,6 @@ p, li{
 /* --- CUERPO FORMULARIO ---*/
 
 .cuerpo-formulario {
-    display: flex;
-    flex-direction: row;
     align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
