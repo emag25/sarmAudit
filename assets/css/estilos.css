@@ -39,7 +39,7 @@ h1:before{
     bottom: 0;
     left: 25%;    
     right: 25%;
-    border-bottom: #68d2df solid 5px;
+    border-bottom: #85e3f0 solid 5px;
 }
 
 
@@ -47,7 +47,7 @@ p, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-a, label, input, textarea, select {
+label, input, textarea, select {
     font-size: 14pt;
 }
 
@@ -56,6 +56,9 @@ p, li{
     color: rgb(75, 75, 75);
 }
 
+a {
+    font-size: 12pt;
+}
 
 
 /* --- MENU ---*/
@@ -83,7 +86,8 @@ p, li{
     float: right;
 }
 
-.menu-collapse a{
+.menu-collapse a{    
+    letter-spacing: 1px;
     margin: 20px;
     text-decoration: none;
     color: white;
@@ -94,7 +98,7 @@ p, li{
 }
 
 .menu-collapse a:focus, .menu a:hover {
-  color: #68d2df;
+  color: #85e3f0;
 }
 
 .menu-collapse a:focus:after, .menu a:hover:after {
@@ -109,8 +113,8 @@ p, li{
   left: 50%;
   position: absolute;
   width: 0%;
-  height: 3px;
-  background-color: #68d2df;
+  height: 2px;
+  background-color: #85e3f0;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 400ms;
   transition-property: width, left;
@@ -123,28 +127,17 @@ p, li{
     bottom: 0;
     left: 45%;  
     bottom: -5px;  
-    border-bottom: #68d2df solid 3px;
+    border-bottom: #85e3f0 solid 2px;
 }
 
 
 /* --- ENCABEZADO ---*/
-.encabezado{
+#encabezado{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 80px 20px 80px 20px;
     background-color: #0f1a2c;
-    color: white;
-}
-
-.encabezado p {
-    text-align: center;
-    width: 50%;
-    margin-top: 60px;
-    font-size: 20pt;      
-    animation: bajar 1s ease-out;
-    animation-fill-mode: forwards; 
     color: white;
 }
 
@@ -159,10 +152,63 @@ p, li{
     }
 }
 
-.encabezado h1 {
-    margin: 10px;
+.contendor-encabezado{    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 87vh;
+    opacity: 0.2;
+    transition: opacity 2s ease-in-out;
+    position: relative;    
 }
 
+.contenido-encabezado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    position: absolute;            
+    animation: bajar 1.5s ease-out;
+    animation-fill-mode: forwards;
+    padding: 30px; 
+}
+
+.contenido-encabezado h1 {
+    font-size: 40pt;
+    margin: 10px;    
+}
+
+.contenido-encabezado p {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 20pt;      
+    color: white;
+}
+
+.contenido-encabezado a{
+    margin-top: 30px;
+    padding: 15px 25px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 14pt;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.contenido-encabezado a:hover{
+    background-color: #20bdd2;
+    border: 2px solid #20bdd2;
+    transition: 0.5s;
+}
+
+.contenido-encabezado a:not(hover){
+    background-color: transparent;
+    border: 2px solid white;
+    transition: 0.5s;
+}
 
 
 
@@ -173,7 +219,7 @@ p, li{
     color: #0f1a2c;
 }
 
-.cuerpo-valores, .cuerpo-control, .cuerpo-redes{
+.cuerpo-valores, .cuerpo-control, .cuerpo-redes, .cuerpo-servicios{
     background: rgb(92,190,208);
     background: linear-gradient(125deg, rgba(92,190,208,1) 0%, rgba(224,253,255,1) 52%);
     color: #0f1a2c;
@@ -200,48 +246,70 @@ p, li{
 /* --------------------- PAGINA INICIO ---------------------*/
 
 
+
+
+
+
+/* --- CUERPO NOSOTROS ---*/
+
+
+
+
+
 /* --- CUERPO SERVICIOS ---*/
 
-.contenedor-servicios {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 40px;
-    width: 100%;
-    margin-top: 50px;
-}
-
-.servicios {
+.servicio{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
-    padding: 40px;
-    margin: 20px 0 20px 0;
-    width: 30%;
-    background: #F1F1F1;
-    border-radius: 20px;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background-color: #0f1a2c;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    transition: all 0.5s ease;
 }
 
-.servicios img {
-    width: 200px;
-    height: auto;
-    margin-top: -120px;
-    border-radius: 50%;
-    border: white solid 10px;
+.servicio:hover{
+    background-color: #85e3f0;
+    color: #0f1a2c;
 }
 
-.servicios h2 {
-    margin: 20px 0 20px 0;
+.servicio h2{
+    margin: 10px;
 }
 
-.servicios p {
-    text-align: center;
-    margin-bottom: 40px;
+.servicio p{
+    margin: 10px;
 }
+
+.servicio img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+
+
+
+
+
+
+/* --- CUERPO CONTACTANOS ---*/
+
+.cuerpo-contacto {
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+
+/* --- BOTON ---*/
 
 .more {
     border: none;
@@ -294,14 +362,6 @@ p, li{
     transform-origin: bottom left;
 }
 
-
-
-/* --- CUERPO CONTACTANOS ---*/
-
-
-
-
-/* --- CUERPO NOSOTROS ---*/
 
 
 
@@ -484,8 +544,6 @@ p, li{
 
 /* --------------------- PAGINA SERVICIOS ---------------------*/
 
-/* --- CUERPO SERVICIOS ---*/
-
 .contenido-auditoria, .contenido-prevencion {
     display: flex;
     flex-direction: row;
@@ -585,7 +643,7 @@ p, li{
 
 /* --- CUERPO HORARIOS ---*/
 
-.cuerpo-horario, .cuerpo-contacto {
+.cuerpo-horario{
     align-items: center;
     justify-content: space-around;
     gap: 20px;
@@ -762,7 +820,7 @@ form input[type="submit"]:not(:hover){
 }
 
 .contenedor-notfound a{
-    color: #68d2df;
+    color: #85e3f0;
 }
 
 
@@ -780,7 +838,7 @@ form input[type="submit"]:not(:hover){
 }
 
 .foot i{
-    color: #68d2df;
+    color: #85e3f0;
     font-size: 15pt;
 }
 
@@ -797,7 +855,7 @@ form input[type="submit"]:not(:hover){
 
 .foot h4 {
     margin-bottom: 20px;
-    border-bottom: #68d2df solid 1px;
+    border-bottom: #85e3f0 solid 1px;
     display: inline;
 }
 
