@@ -4,140 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="description"
-        content="Página de inicio de la firma de auditores SARM-AUDIT.">
-    <meta name="keywords"
-        content="auditoria, firma de auditores, control interno, auditoria externa, asesoria contable, asesoria financiera">
-    <meta name="author" content="Emely Mishell Apráez González">
-    <title>SARM-AUDIT S.A.S.</title>
-
-    <link href="assets/css/estilos.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Nosotros - SARM-AUDIT S.A.S.</title>
+    <link href="assets/index/css/estilosIndex.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <script src="assets/js/script.js"></script>
-
-    <style>
-        .encabezado .encabezado-img {
-            width: 40%;
-            height: auto;
-        }
-    </style>
-
+    <script src="assets/index/js/index.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
 </head>
 
 <body>
-
-
-    <!-- MENU -->
-    <nav class="menu">
-        <!-- este ID INICIO va abajo cuando se arregle fijar el menu -->
-        <div class="menu-contenedor">
-            <div class="menu-navbar">
-                <a href="index.html"><img src="assets/img/FONDO-AZUL-LINEA.png" alt="sarm-audit" width="250px"></a>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo">
+                    <img src="assets/img/PNG/logo-header.png" alt="SARM-AUDIT Logo">
+                </a>
+                <button class="navbar-toggle" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+                <div class="navbar-menu">
+                    <a href="index.html" id="item-selected">INICIO</a>
+                    <a href="nosotros.html" class="navbar-item">NOSOTROS</a>
+                    <a href="servicios.html" class="navbar-item">SERVICIOS</a>
+                    <a href="contacto.html" class="navbar-item">CONTACTO</a>
+                </div>
             </div>
-            <div class="menu-collapse">
-                <a class="header-item activa" style="color: #85e3f0;" href="index.html">INICIO</a>
-                <a class="header-item" href="nosotros.html">NOSOTROS</a>
-                <a class="header-item" href="servicios.html">SERVICIOS</a>
-                <a class="header-item" href="contacto.html">CONTACTO</a>
-                <!--<ul>
-                    <li><a class="header-item" href="#inicio">INICIO</a></li>
-                    <li><a class="header-item" href="#servicios">SERVICIOS</a></li>
-                    <li><a class="header-item" href="#faqs">FAQs</a></li>
-                    <li><a class="header-item" href="#contacto">CONTACTO</a></li>
-                    <li><a class="header-item" href="content/nosotros.html">NOSOTROS</a></li>
-                </ul>-->
-            </div>
+        </nav>
+    </header>
+
+    <section class="portada">
+        <div class="portada-content">
+            <h1 class="portada-title">SARM-AUDIT S.A.S.</h1>
+            <p class="portada-description">Una firma en la que puedes confiar!</p>
+            <a href="contacto.html" class="portada-button">Contactar</a>
         </div>
-    </nav>
-    
-
-    <!-- ENCABEZADO -->
-    <section id="encabezado">
-        <div class="contendor-encabezado" style="background-image: url(assets/img/inicio.jpg);"></div>            
-        <div class="contenido-encabezado">
-            <h1>SARM-AUDIT S.A.S.</h1>
-            <p>Una firma en la que puedes confiar!</p>
-            <a href="contacto.html">CONTACTAR</a>
-        </div>           
+        <div id="lottie-container" class="portada-image"></div>
     </section>
 
+    <section class="separator-portada"></section>
 
-    <!-- BODY -->
-    <div class="cuerpo">
-
-        <!-- NOSOTROS -->
-        <section class="cuerpo-nosotros">
-            <h1>POR QUE ELEGIRNOS</h1>
-            <div class="contenido-nosotros">
-                <p>SARM-AUDIT S.A.S. es una firma de auditores
-                    independientes, con más de 10 años de experiencia en el mercado, que ofrece servicios de
-                    auditoría, consultoría y asesoría en temas de control interno, contabilidad, finanzas y
-                    administración de empresas. Nuestro objetivo es brindar a nuestros clientes un servicio de
-                    calidad, con un alto nivel de profesionalismo y ética, que les permita tomar decisiones
-                    informadas y confiables.</p>                    
+    <section class="about-us" id="nosotros">
+        <div class="about-us-container">
+            <!-- Tarjeta con imagen a la izquierda y texto a la derecha -->
+            <div class="about-us-card">
+                <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sobre nosotros" class="about-us-image">
+                <div class="about-us-content">
+                    <h2 class="about-us-title">¿Quiénes Somos?</h2>
+                    <p class="about-us-text">
+                        SARM-AUDIT es una firma de auditores independientes fundada en agosto del 2022. Ofrecemos servicios de auditoría, consultoría y asesoría en control interno, contabilidad, finanzas y administración empresarial.
+                    </p>
+                </div>
             </div>
-            <a class="more  scroll-content fadeTop" href="contacto.html">
-                <span class="hover-underline-animation">VER MÁS</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                </svg>
-            </a>
-        </section>
-
-
-
-
-
-        <!-- SERVICIOS -->
-
-        <section class="cuerpo-servicios">
-            <h1>NUESTROS SERVICIOS</h1>                
-            <div class="contenedor-servicios">
-                <div class="servicio">
-                    <img src="assets/img/auditoria-externa.jpg" alt="auditoria externa" width="100px">
-                    <h2>Auditoria Externa</h2>                        
-                </div>
-                <div class="servicio">
-                    <img src="assets/img/control-interno.jpg" alt="auditoria interna" width="100px">
-                    <h2>Auditoria Interna</h2>
-                </div>
-                <div class="servicio">
-                    <img src="assets/img/asesoria.jpg" alt="prevencion lavado de activos" width="100px">
-                    <h2>Prevencion de Lavado de Activos</h2>
-                </div>
-        </section>
-
-
-
-        <!-- CONTACTO -->
-
-        <section class="cuerpo-contacto">
-            <div class="contenedor-contacto-letras scroll-content fadeLeft">
-                <h1>CONTÁCTANOS</h1>
-                <p>Conoce nuestros horarios de atención, nuestras redes sociales o déjanos un mensaje.</p>
-            </div>            
-            <div class="contenedor-contacto scroll-content fadeRight">
-                <a class="more  scroll-content fadeTop" href="contacto.html">
-                    <span class="hover-underline-animation">VER MÁS</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            <!-- Flecha a la derecha -->
+            <div class="about-us-more">
+                <a href="nosotros.html" class="about-us-link">
+                    <span>Ver más</span>
+                    <svg class="about-us-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <!-- Actualización del camino del SVG para que apunte hacia la derecha -->
+                        <path d="M8 5l5 5-5 5V5z" />
                     </svg>
                 </a>
             </div>
+        </div>
+    </section>
+    
+    
 
-        </section>
-        
+    <section class="separator-about"></section>
+
+    <section class="services" id="servicios">
+        <h2 class="services-title">Servicios que Ofrecemos</h2>
+        <!-- Carrusel contenedor -->
+        <div class="services-carousel-wrapper">
+            <div class="services-carousel" id="servicesCarousel">
+                <!-- Card 1 -->
+                <div class="service-card uno">
+                    <h3 class="service-card-title">Auditoría Externa</h3>
+                    <img src="https://images.pexels.com/photos/716276/pexels-photo-716276.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Auditoría Externa" class="service-card-image">
+                    <p class="service-card-description">Ofrecemos auditorías externas independientes para evaluar y mejorar la integridad financiera de su organización.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="service-card dos">
+                    <h3 class="service-card-title">Auditoría Interna</h3>
+                    <img src="https://images.pexels.com/photos/3321793/pexels-photo-3321793.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Auditoría Interna" class="service-card-image">
+                    <p class="service-card-description">Mejoramos el control interno y la eficiencia operativa de su empresa mediante auditorías internas detalladas.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="service-card tres">
+                    <h3 class="service-card-title">Control Interno</h3>
+                    <img src="https://images.pexels.com/photos/3856020/pexels-photo-3856020.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Control Interno" class="service-card-image">
+                    <p class="service-card-description">Diseñamos y optimizamos sistemas de control interno para asegurar el cumplimiento normativo y mitigar riesgos.</p>
+                </div>
+                <!-- Card 4 (Ver más) -->
+                <div class="service-card service-card-more cuatro">
+                    <a href="servicios.html" class="service-card-link">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+       
+    <div class="custom-shape-divider-top-1722997170">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
+        </svg>
     </div>
 
 
+    <section class="tech-tools" id="herramientas-tecnologicas">
+        <div class="tech-tools-container">
+            <div class="tech-tools-content">
+                <h2 class="tech-tools-title">Herramientas Tecnológicas</h2>
+                <p class="tech-tools-text">
+                    En SARM-AUDIT estamos comprometidos con la innovación y la eficiencia en todos nuestros procesos de auditoría y consultoría. Para ello, utilizamos AuditBrain, un software cloud de auditoría de estados y análisis financieros que permite trabajar y dirigir de forma ordenada, eficiente y ágil el proceso de Auditoría Financiera desde las actividades previas hasta la finalización y emisión del correspondiente informe de conformidad con las NIAA, en base a riesgos y en los requerimientos de Control de Calidad NICC1.
+                </p>
+            </div>
+            <img src="assets/img/PNG/herramientas.png" alt="AuditBrain Software" class="tech-tools-image">
+        </div>
+    </section>
+    
 
     <!-- FOOTER -->
     <footer class="foot">
 
         <div class="foot-container">
-            <img src="../assets/img/FONDO-AZUL.png" width="190px">
+            <img src="assets/img/PNG/logo-footer.png" width="290px">
 
             <div class="foot-contacto">
                 <h4>CONTACTO</h4>
@@ -166,22 +157,14 @@
 
             <div class="foot-horario">
                 <h4>HORARIOS DE ATENCIÓN</h4>
-                <p style="margin-top: 20px;">Lunes a Viernes: 9h a 17h</p>
-                <p>Sabado: 9h a 13h</p>
-                <p style="margin-bottom:0;">Feriados: No hay atención</p>
-            </div>
-
-            <div class="foot-secciones">
-                <h4>SECCIONES</h4>
-                <a style="margin-top: 20px;" class="header-item" href="index.html">Inicio</a>
-                <a class="header-item" href="nosotros.html">Nosotros</a>
-                <a class="header-item" href="servicios.html">Servicios</a>
-                <a class="header-item" href="contacto.html">Contacto</a>
+                <p style="margin-top: 20px;"><strong>Lunes a Viernes:</strong> 9h a 17h</p>
+                <p><strong>Sabado:</strong> 9h a 13h</p>
+                <p style="margin-bottom:0;"><strong>Feriados:</strong> No hay atención</p>
             </div>
         </div>
 
         <div class="copy">
-            <p>Guayaquil - Ecuador</p>
+            <p><strong>Guayaquil - Ecuador</strong></p>
             <p>SARM-AUDIT © 2022 Todos los derechos reservados</p>
         </div>
     </footer>

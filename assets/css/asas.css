@@ -1,0 +1,411 @@
+
+
+/*  -------------------   SEPARADORES    -------------------------*/
+.curved {
+    position: relative;
+    height: 210px;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+  }
+/*  -------------------   PRINCIPAL    -------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+/*  -------------------   MENU    -------------------------*/
+.menu {
+    background-color: #0B1F67;
+    color: white;
+    padding: 1rem;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-logo {
+    height: 50px;
+}
+
+.menu-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-collapse a {
+    color: white;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    transition: color 0.3s;
+}
+
+.menu-collapse a:hover,
+.menu-collapse a.active {
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 90px 0px rgba(255, 255, 255, 0.5);
+    padding: 10px;
+}
+
+/*  -------------------   HEADER    -------------------------*/
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.header-container {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    animation: fadeInBackground 0.5s ease-in-out;
+
+}
+
+.header-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad */
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: slideIn 0.5s ease-in-out;
+    background-color: rgba(11, 31, 103, 0.3); /* Fondo azul con 70% de opacidad */
+    padding: 20px;
+    border: 1px solid white; /* Borde blanco */
+    border-radius: 45px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); /* Sombra elegante */
+    color: white;
+}
+
+.header-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #0B1F67;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.header-button:hover {
+    background-color: #f9f9f9;
+    color:#0B1F67;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+
+.header-title{
+    margin: 1rem 0;
+    font-size: 2.5rem;
+}
+
+.header-description{
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+/*  -------------------   HEADER (ANIMACIONES)   -------------------------*/
+@keyframes fadeInBackground {
+    0% {
+        opacity: 0;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/*  -------------------   HEADER (RESPONSIVE)    -------------------------*/
+@media (min-width: 768px) {
+    .header-container {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header-container {
+        height: 500px;
+    }
+}
+/*  -------------------   ABOUT US    -------------------------*/
+.about-us {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(0deg, #99cbfe6b, #FDFCF9);
+}
+
+.about-us h1 {
+    margin-bottom: 1rem;
+}
+/*  -------------------   PHILOSOPHY    -------------------------*/
+.philosophy {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(0deg, #99cbfe6b, #FDFCF9);
+}
+
+.philosophy h1 {
+    margin-bottom: 1rem;
+}
+/*  -------------------   MISION & VISION   -------------------------*/
+.mission-vision {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(0deg, #FDFCF9, #99cbfe6b);
+}
+
+.mission-vision .mission,
+.mission-vision .vision {
+    margin-bottom: 2rem;
+}
+
+.mission-vision h1 {
+    margin-bottom: 1rem;
+}
+/*  -------------------   VALUES    -------------------------*/
+.values {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(0deg, #99cbfe6b, #FDFCF9);
+}
+
+.values h1 {
+    margin-bottom: 1rem;
+}
+
+.values-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.value-item {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.value-item i {
+    font-size: 2rem;
+    color: #003b5c;
+    margin-bottom: 0.5rem;
+}
+/*  -------------------   OUR TEAM    -------------------------*/
+.our-team {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(0deg, #FDFCF9, #99cbfe6b);
+}
+
+.our-team h1 {
+    margin-bottom: 1rem;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/*  -------------------   FOOTER    -------------------------*/
+.foot{
+    background-color: #0B1F67;
+    color: white;
+    padding: 20px;
+}
+
+.foot i{
+    color: #85e3f0;
+    font-size: 15pt;
+}
+
+.foot p, .foot a{
+    font-size: 13pt;
+    text-align: justify;
+    color: white;
+    display: block;
+}
+
+.foot-secciones a:hover, .foot-contacto p:hover{
+    color: #c6c6c6;
+} 
+
+.foot h4 {
+    margin-bottom: 20px;
+    border-bottom: #85e3f0 solid 1px;
+    display: inline;
+}
+
+.foot-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 20px 0 40px 0;
+}
+
+.foot-contacto .contenedor-contacto {
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.foot-contacto .contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.foot-contacto a{
+    display: flex;
+    gap: 5px;
+}
+
+.foot-horario p{
+    margin-bottom: 12px;
+}
+
+.copy p:nth-child(1){
+    padding-top: 17px;
+    border-top: #c6c6c6 solid 0.5px;    
+}
+
+.copy p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+
+
+/* --- EFECTOS ---*/
+
+.fadeTop {
+    opacity: 0; 
+    transform: translate(0vh, 15vh);
+    transition: all 1s;
+}
+
+.fadeBottom {
+    opacity: 0; 
+    transform: translate(0vh, -15vh);
+    transition: all 1s;
+}
+
+.fadeRight {
+    opacity: 0;
+    transform: translate(15vh, 0vh);
+    transition: all 1s;
+}
+
+.fadeLeft {
+    opacity: 0;
+    transform: translate(-15vh, 0vh);
+    transition: all 1s;
+}
+
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
+.copy {
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .menu-collapse {
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .menu-collapse a {
+        margin: 0 1rem;
+    }
+    
+    .team-container {
+        flex-direction: row;
+    }
+
+    .value-item,
+    .team-member {
+        width: 20%;
+        max-width: none;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .footer-contacto,
+    .footer-horario {
+        margin: 1rem;
+    }
+
+    .footer-contacto .contenedor-contacto {
+        flex-direction: row;
+    }
+
+    .footer-contacto .contacto {
+        margin: 0 1rem;
+    }
+
+    .footer-logo {
+        margin-bottom: 0;
+    }
+}

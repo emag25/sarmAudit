@@ -4,115 +4,324 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Emely Mishell Apráez González">
-    <meta name="description"
-        content="Conoce los servicios que ofrece SARM-AUDIT">
-    <meta name="keywords"
-        content="auditoria externa, control interno firma de auditores, asesoria, prevencion de lavado de activos, SARM-AUDIT">
-    <meta name="author" content="Emely Mishell Apráez González">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>Servicios - SARM-AUDIT S.A.S.</title>
-
-    <link href="assets/css/estilos.css" rel="stylesheet" />
+    <link href="assets/servicios/css/estilosServicios.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <script src="assets/js/script.js"></script>
-
-    <style>
-        .encabezado img {
-            width: 20%;
-            height: auto;
-        }    
-    </style>
-
+    <script src="assets/servicios/js/servicios.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo">
+                    <img src="assets/img/PNG/logo-header.png" alt="SARM-AUDIT Logo">
+                </a>
+                <button class="navbar-toggle" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon"></span>
+                </button>
+                <div class="navbar-menu">
+                    <a href="index.html" class="navbar-item">INICIO</a>
+                    <a href="nosotros.html" class="navbar-item" class="navbar-item">NOSOTROS</a>
+                    <a id="item-selected">SERVICIOS</a>
+                    <a href="contacto.html" class="navbar-item">CONTACTO</a>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <!-- MENU -->
-    <nav class="menu">
-        <div class="menu-contenedor">
-            <div class="menu-navbar">
-                <a href="index.html"><img src="assets/img/FONDO-AZUL-LINEA.png" alt="sarm-audit" width="250px"></a>
-            </div>
-            <div class="menu-collapse">
-                <a class="header-item" href="index.html">INICIO</a>
-                <a class="header-item" href="nosotros.html">NOSOTROS</a>
-                <a class="header-item activa" style="color: #85e3f0;" href="servicios.html">SERVICIOS</a>
-                <a class="header-item" href="contacto.html">CONTACTO</a>
-            </div>
+    <section class="portada">
+        <div class="portada-content">
+            <h1 class="portada-title">Nuestros Servicios</h1>
+            <p class="portada-description">Conoce lo que hacemos en SARM-AUDIT S.A.S.</p>
+            <a href="#servicios" class="portada-button">VER MAS</a>
         </div>
-    </nav>
-
-    <!-- ENCABEZADO -->
-    <section id="encabezado">
-        <div class="contendor-encabezado" style="background-image: url(assets/img/servicios.jpg);"></div>            
-        <div class="contenido-encabezado">
-            <h1>NUESTROS SERVICIOS</h1>
-            <p>Conoce lo que hacemos en SARM-AUDIT S.A.S.</p>
-            <a href="contacto.html">CONTACTAR</a>
-        </div>           
+        <div id="lottie-container" class="portada-image"></div>
     </section>
 
-    <!-- BODY -->
-    <div class="cuerpo">
+    <section class="separator-portada" id="servicios"></section>
+    
+    <section class="seccionBotones" >
+        <div class="botones-intercambio">
+            <button onclick="mostrarSeccion('auditoria_externa')">Auditoría Externa</button>
+            <button onclick="mostrarSeccion('auditoria_interna')">Auditoría Interna</button>
+            <button onclick="mostrarSeccion('control_interno')">Control Interno</button>
+        </div>
+    </section>
 
-        <!-- AUDITORIA EXTERNA -->        
-        <div class="cuerpo-auditoria">
-            <h1>Auditoría externa</h1>
-            <div class="contenido-auditoria">
-                <div class="scroll-content fadeLeft">
-                    <p>El propósito de una auditoría externa es obtener una seguridad razonable, pero no absoluta, de que los estados financieros están libres de inexactitudes o fraude significativo, nuestro examen se realizará de acuerdo con las Normas Internacionales de Auditoría y Aseguramiento (NIAA) y, por lo tanto, incluyen pruebas selectivas de los estados financieros, la evaluación del control interno y otros procedimientos de auditoría que consideramos necesarios y apropiados para expresar nuestra opinión sobre los estados financieros.</p>
-                </div>                
-                <div class="scroll-content fadeRight">
-                    <p>A continuación se detalla las fases de la auditoría, de acuerdo a nuestra metodología:</p>
-                    <ol>
-                        <li>Planificación</li>
-                        <li>Evaluación del riesgo</li>
-                        <li>Evaluación del control interno</li>
-                        <li>Pruebas de auditoría</li>
-                        <li>Conclusión y presentación de informes</li>
-                    </ol>
+    
+    <div class="auditoria_externa">
+        <section class="seccionUno" >
+            <div class="seccionUno-container">
+                <h2 class="seccionUno-title">Auditoría externa</h2>
+                <div class="seccionUno-content">
+
+                    <div class="seccionUno-content1">
+                        <p class="seccionUno-text">
+                            En SARM-AUDIT S.A.S., nuestra auditoría externa es un proceso riguroso y meticuloso diseñado para proporcionar una evaluación independiente de los estados financieros y las prácticas contables de una organización. Este servicio es esencial para garantizar la precisión y transparencia de la información financiera, permitiendo a las empresas cumplir con las normativas legales y reglamentarias.
+
+                        </p>
+                    </div>
+
+                    <div class="seccionUno-content2">
+                        <div class="seccionUno-text2">
+                            <p>Nuestras Fases de Auditoría</p>
+                            <ul>
+                                <li>Planificación</li>
+                                <li>Evaluación del riesgo</li>
+                                <li>Evaluación del control interno</li>
+                                <li>Pruebas de auditoría</li>
+                                <li>Conclusión y presentación de informes</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
                 
-            </div>                                        
-        </div>   
+            </div>
+        </section>
         
+        <section class="separator-about"></section>
 
-        <!-- CONTROL INTERNO -->     
-        <div class="cuerpo-control">
-            <h1>Control interno</h1>             
-            <div class="contenido-control scroll-content fadeTop">
-                <p>El propósito de la auditoría interna es revisar los procesos desarrollados, implementados y mantenidos por los encargados del gobierno corporativo, la administración y otros para proporcionar una seguridad razonable de que se lograrán los objetivos de la empresa relacionados con la confiabilidad, validez y eficacia de las operaciones, así como el cumplimiento de las disposiciones legales y reglamentarios aplicables.</p>
+        <section class="contenidoUno">
+            <div class="contenedor-contenidoUno">
+                <h2 class="contenidoUno-title">¿Qué incluye nuestra Auditoría Externa?</h2>
+                <div class="contenidoUno-content" id="contenidoUno-Uno">
+                    <div class="contenidoUno-item item-uno">
+                        <img src="assets/img/servicios/externo-uno.jpg" alt="Evaluación Financiera Integral" class="contenidoUno-image">
+                        <h3 class="contenidoUno-subtitle">Evaluación Financiera Integral</h3>
+                        <p>Analizamos todos los aspectos financieros de la empresa, incluyendo estados financieros, estados de resultados y flujos de efectivo, para asegurar que reflejen fielmente la situación económica de la organización.</p>
+                    </div>
+                    <div class="contenidoUno-item item-dos">
+                        <img src="assets/img/servicios/externo-dos.jpg" alt="Cumplimiento Normativo" class="contenidoUno-image">
+                        <h3 class="contenidoUno-subtitle">Cumplimiento Normativo</h3>
+                        <p>Verificamos que las prácticas contables y financieras del cliente cumplan con las normativas locales e internacionales, como las Normas Internacionales de Información Financiera (NIIF).</p>
+                    </div>
+                    <div class="contenidoUno-item item-tres">
+                        <img src="assets/img/servicios/externo-tres.jpg" alt="Control Interno" class="contenidoUno-image">
+                        <h3 class="contenidoUno-subtitle">Control Interno</h3>
+                        <p>Evaluamos la eficacia de los sistemas de control interno, identificando áreas de mejora para fortalecer la seguridad y la precisión de la información financiera.</p>
+                    </div>
+                    <div class="contenidoUno-item item-cuatro">
+                        <img src="assets/img/servicios/externo-cuatro.jpg" alt="Informes de Control Interno" class="contenidoUno-image">
+                        <h3 class="contenidoUno-subtitle">Informes de Control Interno</h3>
+                        <p>Proporcionamos informes detallados y objetivos, destacando nuestras conclusiones y recomendaciones para mejorar las prácticas financieras y operativas de la empresa.</p>
+                    </div>
+                </div>
+        
             </div>
-        </div>
 
-
-        <!-- AUDITORIA EXTERNA -->  
-        <div class="cuerpo-prevencion">
-            <h1>Prevención de lavado de activos</h1>
-            <div class="contenido-prevencion">   
-                <div class="scroll-content fadeLeft">
-                    <p>Antes se consideraba que las instituciones financieras eran el único sector por el cual se podían realizar operaciones y actos que pudieran estar relacionados con el lavado de dinero.<br>Hoy en día se ha comprobado que empresas de otros sectores pueden ser utilizadas para estos fines, por lo tanto, la Superintendencia de Compañías, Valores y Seguros, emitió las Normas de Prevención de Lavado de Activos, Financiamiento del Terrorismo y Otros Delitos, mediante la Resolución No. SCVS-INC-DNCDN-2021-0002 publicada en el segundo suplemento del Registro Oficial No. 411 del 16 de marzo de 2021, donde el auditor se encargará exclusivamente de:</p>
-                </div>               
-                <div class="scroll-content fadeRight">
-                    <ol>
-                        <li>Verificar el cumplimiento de los previsto en la norma respecto a las políticas, procedimientos y mecanismos implementados por el sujeto obligado para la prevención de lavado de activos, el financiamiento del terrorismo y otros delitos.</li>
-                        <li>Valorar su eficacia operativa y proponer, de ser el caso, eventuales rectificaciones o mejoras.</li>
-                        <li>El auditor externo también deberá informar al oficial de cumplimiento del sujeto obligado sobre las operaciones o transacciones detectadas durante las auditorías que a su criterio constituyen actividades inusuales o injustificadas.</li>
-                    </ol>
-                </div>                
+            <div class="custom-shape-divider-top-1722993184">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
             </div>
-        </div>   
 
+            <div class="contenedor-contenidoDos">
+                <h2 class="contenidoUno-title">Beneficios de nuestra Auditoría Externa</h2>
+                <div class="contenidoUno-content" id="contenidoUno-Dos">
+                    <div class="contenidoUno-item item-cinco">
+                        <img src="assets/img/servicios/externo-cinco.jpg" alt="Transparencia y Confianza" class="contenidoUno-image">
+                        <h3 class="contenidoUno-subtitle">Transparencia y Confianza</h3>
+                        <p>Aportamos un nivel de transparencia que ayuda a generar confianza entre los inversionistas, accionistas y otras partes interesadas.</p>
+                    </div>
+                    <div class="contenidoUno-item item-seis">
+                        <img src="assets/img/servicios/externo-seis.jpg" alt="Identificación de Riesgos" class="contenidoUno-image">
+                        <h3 class="contenidoUno-subtitle">Identificación de Riesgos</h3>
+                        <p>Detectamos y evaluamos riesgos potenciales que podrían afectar la salud financiera de la empresa.</p>
+                    </div>
+                    <div class="contenidoUno-item item-siete">
+                        <img src="assets/img/servicios/externo-siete.jpg" alt="Mejora Continua" class="contenidoUno-image">
+                        <h3 class="contenidoUno-subtitle">Mejora Continua</h3>
+                        <p>Nuestras recomendaciones prácticas ayudan a las empresas a mejorar continuamente sus procesos y sistemas financieros.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+   
+    <div class="auditoria_interna">
+        <section class="seccionDos">
+            <h1 class="seccionDos-title">Auditoría interna</h1>
+            <div class="seccionDos-content">
+                <div class="seccionDos-text">
+                    <p>La auditoría interna es un componente esencial para el fortalecimiento y la mejora continua de las operaciones de una organización. Nuestro servicio de auditoría interna está diseñado para evaluar y mejorar la eficacia de los procesos de control interno, gestión de riesgos y gobierno corporativo, proporcionando un valor añadido significativo a nuestros clientes.
+                    </p>
+                </div>
+                <div class="seccionDos-image" style="background-image: url('https://images.pexels.com/photos/7731327/pexels-photo-7731327.jpeg');"></div>
+            </div>
+        </section>
+        
+        <section class="separator-portada"></section>
 
+        <section class="contenidoDos">
+            <div class="contenedorDos-contenidoDos">
+                <h2 class="contenidoDos-title">¿Qué incluye nuestra auditoría interna?</h2>
+                <div class="contenidoDos-content" id="contenidoDos-Uno">
+                    <div class="contenidoDos-item item-uno">
+                        <img src="assets/img/servicios/externo-uno.jpg" alt="Evaluación de Control Interno" class="contenidoDos-image">
+                        <h3 class="contenidoDos-subtitle">Evaluación de Control Interno</h3>
+                        <p>Analizamos y evaluamos los sistemas de control interno de la organización, identificando áreas de mejora y proponiendo soluciones efectivas para optimizar la eficiencia y la seguridad de las operaciones.                        </p>
+                    </div>
+                    <div class="contenidoDos-item item-dos">
+                        <img src="assets/img/servicios/externo-dos.jpg" alt="Gestión de Riesgos" class="contenidoDos-image">
+                        <h3 class="contenidoDos-subtitle">Gestión de Riesgos</h3>
+                        <p>Identificamos y evaluamos los riesgos potenciales que podrían afectar a la organización, desarrollando estrategias para mitigar estos riesgos y proteger los activos de la empresa.                        </p>
+                    </div>
+                    <div class="contenidoDos-item item-tres">
+                        <img src="assets/img/servicios/externo-tres.jpg" alt="Cumplimiento Normativo" class="contenidoDos-image">
+                        <h3 class="contenidoDos-subtitle">Cumplimiento Normativo</h3>
+                        <p>Aseguramos que la empresa cumpla con las leyes, regulaciones y políticas internas, minimizando el riesgo de sanciones y mejorando la reputación corporativa.</p>
+                    </div>
+                    <div class="contenidoDos-item item-cuatro">
+                        <img src="assets/img/servicios/externo-cuatro.jpg" alt="Revisión de Procesos Operativos" class="contenidoDos-image">
+                        <h3 class="contenidoDos-subtitle">Revisión de Procesos Operativos</h3>
+                        <p>Examinamos los procesos operativos y financieros para identificar oportunidades de mejora, reducción de costos y aumento de la eficiencia.                        </p>
+                    </div>
+                    <div class="contenidoDos-item item-cuatro">
+                        <img src="assets/img/servicios/externo-cuatro.jpg" alt="Informes y Recomendaciones" class="contenidoDos-image">
+                        <h3 class="contenidoDos-subtitle">Informes y Recomendaciones</h3>
+                        <p>Proporcionamos informes detallados con nuestras conclusiones y recomendaciones, ayudando a la dirección a tomar decisiones informadas y estratégicas.                         </p>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div class="custom-shape-divider-top-1722993184" id="separador-contenido-dos">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+
+            <div class="contenedorDos-contenidoDos">
+                <h2 class="contenidoDos-title">Beneficios de nuestra auditoría interna</h2>
+                <div class="contenidoDos-content" id="contenidoDos-Dos">
+                    <div class="contenidoDos-item item-cinco">
+                        <img src="assets/img/servicios/externo-cinco.jpg" alt="Mejora de la Eficiencia" class="contenidoDos-image">
+                        <h3 class="contenidoDos-subtitle">Mejora de la Eficiencia</h3>
+                        <p>Ayudamos a optimizar los procesos operativos, reduciendo costos y aumentando la productividad.</p>
+                    </div>
+                    <div class="contenidoDos-item item-seis">
+                        <img src="assets/img/servicios/externo-seis.jpg" alt="Reducción de Riesgos" class="contenidoDos-image">
+                        <h3 class="contenidoDos-subtitle">Reducción de Riesgos</h3>
+                        <p>Proporcionamos una visión clara de los riesgos a los que se enfrenta la organización y las medidas necesarias para mitigarlos.</p>
+                    </div>
+                    <div class="contenidoDos-item item-siete">
+                        <img src="assets/img/servicios/externo-siete.jpg" alt="Cumplimiento y Transparencia" class="contenidoDos-image">
+                        <h3 class="contenidoDos-subtitle">Cumplimiento y Transparencia</h3>
+                        <p>Aseguramos el cumplimiento con las normativas y políticas, promoviendo la transparencia y la confianza en la gestión corporativa.</p>
+                    </div>
+                    <div class="contenidoDos-item item-ocho">
+                        <img src="assets/img/servicios/externo-ocho.jpg" alt="Valor Añadido" class="contenidoDos-image">
+                        <h3 class="contenidoDos-subtitle">Valor Añadido</h3>
+                        <p>Nuestras auditorías no solo identifican problemas, sino que también proporcionan soluciones prácticas y estratégicas para mejorar la operación global de la empresa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
+    <div class="control_interno">
+        <section class="seccionTres">
+            <div class="seccionTres-container">
+                <h2 class="seccionTres-title">Control interno</h2>
+                <div class="seccionTres-content">
+    
+                    <div class="seccionTres-content1">
+                        <p class="seccionTres-text">
+                            Entendemos la importancia de un sólido sistema de control interno para garantizar la eficiencia operativa, la fiabilidad de la información financiera y el cumplimiento de leyes y regulaciones. Nuestro servicio de control interno está diseñado para ayudar a las organizaciones a establecer, evaluar y mejorar sus sistemas de control, proporcionando un marco robusto para la gestión de riesgos y la toma de decisiones.
+                        </p>
+                    </div>
+    
+                    <div class="seccionTres-content2" style="background-image: url('https://images.pexels.com/photos/7731327/pexels-photo-7731327.jpeg');"></div>
+    
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="separator-portada"></section>
+
+        
+        <section class="contenidoTres">
+            <div class="contenedorTres-contenidoTres">
+                <h2 class="contenidoTres-title">¿Qué incluye nuestro servicio de control interno?</h2>
+                <div class="contenidoTres-content" id="contenidoTres-Uno">
+                    <div class="contenidoTres-item item-uno">
+                        <img src="assets/img/servicios/externo-uno.jpg" alt="Evaluación y Diseño de Sistemas de Control" class="contenidoTres-image">
+                        <h3 class="contenidoTres-subtitle">Evaluación y Diseño de Sistemas de Control</h3>
+                        <p>Analizamos los sistemas actuales de control interno de la organización y diseñamos estructuras personalizadas que se ajusten a las necesidades específicas de cada cliente, asegurando una implementación efectiva y eficiente.</p>
+                    </div>
+                    <div class="contenidoTres-item item-dos">
+                        <img src="assets/img/servicios/externo-dos.jpg" alt="Monitoreo y Mejora Continua" class="contenidoTres-image">
+                        <h3 class="contenidoTres-subtitle">Monitoreo y Mejora Continua</h3>
+                        <p>Proporcionamos herramientas y estrategias para el monitoreo continuo de los controles internos, permitiendo identificar y corregir debilidades de manera proactiva.</p>
+                    </div>
+                    <div class="contenidoTres-item item-tres">
+                        <img src="assets/img/servicios/externo-tres.jpg" alt="Capacitación y Sensibilización" class="contenidoTres-image">
+                        <h3 class="contenidoTres-subtitle">Capacitación y Sensibilización</h3>
+                        <p>Ofrecemos programas de capacitación para el personal, promoviendo una cultura de control y cumplimiento dentro de la organización.</p>
+                    </div>
+                    <div class="contenidoTres-item item-cuatro">
+                        <img src="assets/img/servicios/externo-cuatro.jpg" alt="Auditorías de Control Interno" class="contenidoTres-image">
+                        <h3 class="contenidoTres-subtitle">Auditorías de Control Interno</h3>
+                        <p>Realizamos auditorías periódicas para evaluar la efectividad de los controles implementados, identificando áreas de mejora y proponiendo soluciones prácticas.</p>
+                    </div>
+                    <div class="contenidoTres-item item-cuatro">
+                        <img src="assets/img/servicios/externo-cuatro.jpg" alt="Asesoramiento en Cumplimiento" class="contenidoTres-image">
+                        <h3 class="contenidoTres-subtitle">Asesoramiento en Cumplimiento</h3>
+                        <p>Asesoramos a nuestros clientes en el cumplimiento de normativas y regulaciones relevantes, minimizando riesgos legales y operativos.</p>
+                    </div>
+                </div>
+        
+            </div>
+
+            <div class="custom-shape-divider-top-1722993184" id="separador-contenido-dos">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+                </svg>
+            </div>
+
+            <div class="contenedorTres-contenidoTres">
+                <h2 class="contenidoTres-title">Beneficios de nuestro servicio de control interno</h2>
+                <div class="contenidoTres-content" id="contenidoTres-Dos">
+                    <div class="contenidoTres-item item-cinco">
+                        <img src="assets/img/servicios/externo-cinco.jpg" alt="Eficiencia Operativa" class="contenidoTres-image">
+                        <h3 class="contenidoTres-subtitle">Eficiencia Operativa</h3>
+                        <p>Mejora la eficiencia y efectividad de las operaciones mediante la identificación y mitigación de riesgos operativos.</p>
+                    </div>
+                    <div class="contenidoTres-item item-seis">
+                        <img src="assets/img/servicios/externo-seis.jpg" alt="Protección de Activos" class="contenidoTres-image">
+                        <h3 class="contenidoTres-subtitle">Protección de Activos</h3>
+                        <p>Ayuda a proteger los activos de la empresa mediante la implementación de controles efectivos y estrategias de mitigación de riesgos.</p>
+                    </div>
+                    <div class="contenidoTres-item item-siete">
+                        <img src="assets/img/servicios/externo-siete.jpg" alt="Transparencia y Confianza" class="contenidoTres-image">
+                        <h3 class="contenidoTres-subtitle">Transparencia y Confianza</h3>
+                        <p>Fomenta la transparencia y la confianza en la información financiera y operativa, mejorando la toma de decisiones y la relación con los stakeholders.</p>
+                    </div>
+                    <div class="contenidoTres-item item-ocho">
+                        <img src="assets/img/servicios/externo-ocho.jpg" alt="Cumplimiento Regulatorio" class="contenidoTres-image">
+                        <h3 class="contenidoTres-subtitle">Cumplimiento Regulatorio</h3>
+                        <p>Asegura el cumplimiento con las leyes y regulaciones aplicables, reduciendo el riesgo de sanciones y mejorando la reputación corporativa.</p>
+                    </div>
+                    <div class="contenidoTres-item item-ocho">
+                        <img src="assets/img/servicios/externo-ocho.jpg" alt="Adaptabilidad y Resiliencia" class="contenidoTres-image">
+                        <h3 class="contenidoTres-subtitle">Adaptabilidad y Resiliencia</h3>
+                        <p>Fortalece la capacidad de la organización para adaptarse a cambios y enfrentar desafíos imprevistos con una estructura de control robusta y flexible.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <!-- FOOTER -->
     <footer class="foot">
 
         <div class="foot-container">
-            <img src="../assets/img/FONDO-AZUL.png" width="190px">
+            <img src="assets/img/PNG/logo-footer.png" width="290px">
 
             <div class="foot-contacto">
                 <h4>CONTACTO</h4>
@@ -126,7 +335,7 @@
                     </div>
                     <div class="contacto">
                         <a href="https://wa.me/593989357505?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" target="_blank">
-                            <i class='bx bxl-whatsapp' ></i>
+                            <i class='bx bxl-whatsapp'></i>
                             <p>+593 (09) 89357505</p>
                         </a>                    
                     </div>
@@ -141,22 +350,14 @@
 
             <div class="foot-horario">
                 <h4>HORARIOS DE ATENCIÓN</h4>
-                <p style="margin-top: 20px;">Lunes a Viernes: 9h a 17h</p>
-                <p>Sabado: 9h a 13h</p>
-                <p style="margin-bottom:0;">Feriados: No hay atención</p>
-            </div>
-
-            <div class="foot-secciones">
-                <h4>SECCIONES</h4>
-                <a style="margin-top: 20px;" class="header-item" href="index.html">Inicio</a>
-                <a class="header-item" href="nosotros.html">Nosotros</a>
-                <a class="header-item" href="servicios.html">Servicios</a>
-                <a class="header-item" href="contacto.html">Contacto</a>
+                <p style="margin-top: 20px;"><strong>Lunes a Viernes:</strong> 9h a 17h</p>
+                <p><strong>Sabado:</strong> 9h a 13h</p>
+                <p style="margin-bottom:0;"><strong>Feriados:</strong> No hay atención</p>
             </div>
         </div>
 
         <div class="copy">
-            <p>Guayaquil - Ecuador</p>
+            <p><strong>Guayaquil - Ecuador</strong></p>
             <p>SARM-AUDIT © 2022 Todos los derechos reservados</p>
         </div>
     </footer>
