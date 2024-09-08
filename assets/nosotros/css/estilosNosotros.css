@@ -344,9 +344,11 @@ header {
 
 /*  -------------------   ABOUT US    -------------------------*/
 .about-us {
-    margin-top: -25px;
+    margin-top: 5px;
     background: linear-gradient(to right, #E6F1FF, #99cbfe6b); /* Gradiente suave entre dos colores */
     padding: 2rem;
+    border-top: 1px solid #0B1F67;
+    border-bottom: 1px solid #0B1F67;
 }
 
 .about-us-container {
